@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>MOMO by Browskii | Skin, led by a nurse who chose skin | Newstead</title>
+<title>MOMO | Skin, led by a nurse who chose skin | Newstead</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --burg:#451719; --burg-deep:#2f0f11; --burg-soft:#5a2326;
-  --blue:#d0ddfc; --blue-ink:#7f93c4;
-  --cream:#f6f1ea; --paper:#fbf8f3; --blush:#efdcd6; --ink:#2a1a1b; --mute:#6f5a5b; --line:rgba(69,23,25,.14);
+  --burg:#441719; --burg-deep:#2E0F10; --burg-soft:#5A2A28;
+  --blue:#CECEE3; --blue-ink:#2E4A7A;
+  --cream:#f6f1ea; --paper:#fbf8f3; --blush:#efdcd6; --ink:#2a1a1b; --mute:#6f5a5b; --line:rgba(68,23,25,.14);
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -29,11 +29,12 @@ a{color:inherit}
 .btn.solid{background:var(--burg);color:var(--cream)}
 .btn.blue{background:var(--blue);border-color:var(--blue);color:var(--burg-deep)}
 .btn.ghost-light{border-color:rgba(246,241,234,.6);color:var(--cream)}
-.btn:hover{transform:translateY(-1px)}
+.btn:hover{transform:translateY(-1px);background:var(--burg-soft);color:var(--cream);border-color:var(--burg-soft)}
+.btn.blue:hover{background:var(--blue-ink);border-color:var(--blue-ink);color:#fff}
 .btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:1.8rem}
 
 header{position:sticky;top:0;z-index:9;background:rgba(246,241,234,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between;height:70px}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px;gap:16px}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
 .brand img{width:44px;height:44px;border-radius:50%;object-fit:cover}
 .brand b{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;letter-spacing:.14em;color:var(--burg)}
@@ -44,21 +45,34 @@ header{position:sticky;top:0;z-index:9;background:rgba(246,241,234,.94);backdrop
 .nav .btn{padding:.7rem 1.2rem;font-size:.64rem}
 @media (max-width:640px){.nav .btn{padding:.6rem .9rem;font-size:.58rem;letter-spacing:.12em}}
 
-.hero{background:var(--burg);color:var(--cream);position:relative;overflow:hidden}
-.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding-top:72px;padding-bottom:72px}
-.hero .ribbon{position:absolute;right:-8%;top:-20%;width:60%;opacity:.07;pointer-events:none}
+.hero{background:var(--burg);color:var(--cream);position:relative;overflow:hidden;min-height:78vh;display:flex;align-items:center}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%}
+.hero .veil{position:absolute;inset:0;background:linear-gradient(90deg,rgba(68,23,25,.96) 0%,rgba(68,23,25,.86) 45%,rgba(68,23,25,.45) 100%)}
+.hero .wrap{position:relative;padding-top:88px;padding-bottom:88px}
+.hero .copy{max-width:640px}
 .hero h1 em{font-style:italic;color:var(--blue)}
-.hero .lead{margin-top:1.4rem;font-size:1.08rem;color:rgba(246,241,234,.82)}
-.hero .photo{aspect-ratio:4/5;object-fit:cover;width:100%;border:1px solid rgba(246,241,234,.18)}
-.hero .cap{font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(246,241,234,.55);margin-top:.7rem}
-@media (max-width:820px){.hero .wrap{grid-template-columns:1fr;padding-top:52px;padding-bottom:52px}.hero .photo{aspect-ratio:4/3}}
+.hero .lead{margin-top:1.4rem;font-size:1.08rem;color:rgba(246,241,234,.86)}
+.hero .cap{font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(246,241,234,.5);margin-top:2.2rem}
+@media (max-width:820px){.hero{min-height:0}.hero .wrap{padding-top:60px;padding-bottom:60px}.hero .veil{background:rgba(68,23,25,.88)}}
+
+.how{background:var(--paper);border-bottom:1px solid var(--line)}
+.how .wrap{padding-top:64px;padding-bottom:64px}
+.how ol{list-style:none;display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:2rem;border:1px solid var(--line)}
+.how li{padding:22px 20px;border-right:1px solid var(--line);font-size:.92rem;color:var(--mute)}
+.how li:last-child{border-right:0}
+.how li b{display:block;font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:500;color:var(--burg);line-height:1.15;margin-bottom:.3rem}
+.how li i{display:block;font-style:normal;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--blue-ink);margin-bottom:.5rem}
+@media (max-width:900px){.how ol{grid-template-columns:1fr 1fr}.how li{border-bottom:1px solid var(--line)}.how li:nth-child(2n){border-right:0}}
+@media (max-width:520px){.how ol{grid-template-columns:1fr}.how li{border-right:0}}
 
 .strip{background:var(--blue);color:var(--burg-deep)}
 .strip .wrap{display:grid;grid-template-columns:repeat(5,1fr);gap:0;padding:0}
-.strip div{padding:26px 22px;border-right:1px solid rgba(69,23,25,.14);font-size:.9rem}
+.strip div{padding:26px 22px;border-right:1px solid rgba(68,23,25,.14);font-size:.9rem}
 .strip div:last-child{border-right:0}
 .strip b{display:block;font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:500;margin-bottom:.15rem}
-@media (max-width:900px){.strip .wrap{grid-template-columns:1fr 1fr}.strip div:nth-child(2n){border-right:0}.strip div{border-bottom:1px solid rgba(69,23,25,.14)}}
+.strip .go{grid-column:1/-1;padding:18px 22px;border-top:1px solid rgba(68,23,25,.14);font-size:.8rem;display:flex;gap:16px;align-items:center;flex-wrap:wrap;border-right:0}
+.strip .go a{color:var(--burg-deep);font-weight:500;letter-spacing:.1em;text-transform:uppercase;font-size:.66rem;text-decoration:none;border-bottom:1px solid var(--burg-deep)}
+@media (max-width:900px){.strip .wrap{grid-template-columns:1fr 1fr}.strip div:nth-child(2n){border-right:0}.strip div{border-bottom:1px solid rgba(68,23,25,.14)}}
 @media (max-width:520px){.strip .wrap{grid-template-columns:1fr}.strip div{border-right:0}}
 
 section.block{padding:84px 0}
@@ -74,16 +88,15 @@ section.block{padding:84px 0}
 .step .n{font-family:'Cormorant Garamond',serif;font-size:2.2rem;color:var(--blue-ink);line-height:1}
 .step h3{margin:.5rem 0 .5rem}
 .step p{font-size:.95rem;color:var(--mute)}
-
-.journey{margin-top:2.6rem;display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line)}
-.journey div{padding:24px;border-right:1px solid var(--line)}
-.journey div:last-child{border-right:0}
-.journey b{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:500;display:block;color:var(--burg)}
-.journey p{font-size:.92rem;color:var(--mute);margin-top:.3rem}
-@media (max-width:640px){.journey{grid-template-columns:1fr}.journey div{border-right:0;border-bottom:1px solid var(--line)}.journey div:last-child{border-bottom:0}}
+.phases{margin-top:2.6rem;display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line)}
+.phases div{padding:24px;border-right:1px solid var(--line)}
+.phases div:last-child{border-right:0}
+.phases b{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:500;display:block;color:var(--burg)}
+.phases p{font-size:.92rem;color:var(--mute);margin-top:.3rem}
+@media (max-width:640px){.phases{grid-template-columns:1fr}.phases div{border-right:0;border-bottom:1px solid var(--line)}.phases div:last-child{border-bottom:0}}
 
 .offer{background:var(--burg-deep);color:var(--cream)}
-.offer .card{background:var(--burg);border:1px solid rgba(208,221,252,.35);padding:44px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.offer .card{background:var(--burg);border:1px solid rgba(206,206,227,.4);padding:44px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
 @media (max-width:820px){.offer .card{grid-template-columns:1fr;padding:30px 24px}}
 .offer h2 em{font-style:italic;color:var(--blue)}
 .offer ul{list-style:none;margin-top:1.2rem}
@@ -140,62 +153,78 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
 <header>
   <div class="wrap nav">
-    <a class="brand" href="#top"><img src="assets/momo/logo.png" alt="MOMO"><span><b>MOMO</b><small>by Browskii &middot; Newstead</small></span></a>
-    <nav class="links"><a href="#what">Skin at MOMO</a><a href="gallery.html">Before and after</a><a href="#ashleigh">Ashleigh</a><a href="#faq">Questions</a></nav>
+    <a class="brand" href="#top"><img src="assets/momo/logo.png" alt="MOMO"><span><b>MOMO</b><small>Skin &middot; Newstead</small></span></a>
+    <nav class="links"><a href="#how">How it works</a><a href="#consult">Your consultation</a><a href="gallery.html">Before and after</a><a href="#ashleigh">Ashleigh</a><a href="#faq">Questions</a></nav>
     <a class="btn solid" href="https://www.browskii.com.au/bookings">Book a skin consultation</a>
   </div>
 </header>
 
 <section class="hero on-burg" id="top">
-  <img class="ribbon" src="assets/momo/logo.png" alt="" aria-hidden="true">
+  <video autoplay muted loop playsinline poster="assets/momo/hero-poster.jpg" aria-hidden="true">
+    <source src="assets/momo/hero.mp4" type="video/mp4">
+  </video>
+  <div class="veil"></div>
   <div class="wrap">
-    <div>
+    <div class="copy">
       <div class="eyebrow">Redness &middot; rosacea &middot; reactive skin &middot; Newstead</div>
       <h1 style="margin-top:1rem">Tried everything and your skin is <em>still red?</em></h1>
-      <p class="lead">MOMO is the skin side of Browskii, led by a Registered Nurse who chose skin over injecting and has a special interest in rosacea and reactive skin. One person, one craft. It starts with a consultation, never a machine.</p>
+      <p class="lead">The cream, the doctor, the prescription you did not want to stay on. MOMO is skin, led by a Registered Nurse who chose skin over injecting and has a special interest in rosacea. It starts with a consultation, never a machine.</p>
       <div class="btns">
         <a class="btn blue" href="assessment.html">Tell me about your skin</a>
         <a class="btn ghost-light" href="https://www.browskii.com.au/bookings">Book a skin consultation</a>
       </div>
-    </div>
-    <div>
-      <img class="photo" src="assets/momo/m08.jpg" alt="The MOMO treatment room at Browskii, Newstead">
-      <div class="cap">27 Wyandra Street, Newstead</div>
+      <div class="cap">A light-based skin treatment &middot; 27 Wyandra Street, Newstead</div>
     </div>
   </div>
 </section>
 
-<section class="strip">
+<section class="how" id="how">
   <div class="wrap">
-    <div><b>Redness that flares</b>Heat, wine, a hot shower, and there it is again.</div>
-    <div><b>Rosacea</b>Diagnosed or suspected, tired of managing it alone.</div>
-    <div><b>Reactive skin</b>Everything stings. Nothing seems safe to use.</div>
-    <div><b>The flush</b>The one that arrives in meetings, at dinner, on the first date.</div>
-    <div><b>The makeup</b>That never quite covers it, and irritates it more.</div>
+    <div class="eyebrow">How it works at MOMO</div>
+    <h2 style="margin-top:.8rem">Five steps. You always know the next one.</h2>
+    <ol>
+      <li><i>Step one</i><b>Tell me about your skin</b>Sixty seconds, on your phone. What flares it, what you have tried, what you want gone.</li>
+      <li><i>Step two</i><b>Your at-home plan</b>A text and an email straight away with what you can do at home, right now, for your redness.</li>
+      <li><i>Step three</i><b>Your skin consultation</b>In the chair at MOMO with someone whose whole job is skin. We look properly before anything is recommended.</li>
+      <li><i>Step four</i><b>Your plan for your skin</b>Written down: clinic, home, how many visits, what we are watching for. Nothing you did not agree to.</li>
+      <li><i>Step five</i><b>Keep it with Aglow</b>Once the redness has settled, a monthly plan keeps it that way. Offered only if it is right for you.</li>
+    </ol>
+    <div class="btns"><a class="btn solid" href="assessment.html">Start with step one</a></div>
   </div>
 </section>
 
-<section class="block" id="what">
+<section class="strip" id="who">
+  <div class="wrap">
+    <div><b>Redness that flares</b>Heat, wine, a hot shower, a meeting. Then there it is.</div>
+    <div><b>Rosacea</b>Diagnosed or suspected. Tired of managing it on your own.</div>
+    <div><b>The prescription</b>The doctor offered it. You would rather not stay on it.</div>
+    <div><b>Reactive skin</b>Everything stings. Nothing feels safe to put on.</div>
+    <div><b>The makeup</b>Never quite covers it. Irritates it more.</div>
+    <div class="go">Sound like you? <a href="#consult">See what happens at your consultation</a> <span>or</span> <a href="assessment.html">tell me about your skin</a></div>
+  </div>
+</section>
+
+<section class="block" id="consult">
   <div class="wrap">
     <div class="two">
       <div>
-        <div class="eyebrow">What happens at MOMO</div>
+        <div class="eyebrow">What happens at your consultation</div>
         <h2 style="margin-top:.8rem">A plan for your skin. Not a menu.</h2>
-        <p class="lead">You have probably been sold products, treatments and promises by people who never asked what your skin actually does. At MOMO the first appointment is a skin consultation with someone whose whole job is skin. We look, we ask, and we build a plan around what is really going on. Which treatment, if any, comes after that, not before.</p>
-        <div class="btns"><a class="btn solid" href="https://www.browskii.com.au/bookings">Book a skin consultation</a></div>
+        <p class="lead">You have been sold products and treatments by people who never asked what your skin does on a bad day. The first appointment at MOMO is a skin consultation with someone whose whole job is skin. We look, we ask, and we build a plan around what is going on. Which treatment, if any, comes after that.</p>
+        <div class="btns"><a class="btn solid" href="#start">See how to start</a></div>
       </div>
-      <img src="assets/momo/m04.jpg" alt="A skin treatment at MOMO by Browskii">
+      <img src="assets/momo/m04.jpg" alt="A practitioner treating a client's face on the treatment bed at MOMO">
     </div>
 
     <div class="steps">
-      <div class="step"><div class="n">01</div><h3>Skin consultation first</h3><p>Your history, your triggers, what you have tried, what your skin does on a bad day and a good one. Photos, so we can see change over time.</p></div>
-      <div class="step"><div class="n">02</div><h3>One person for skin</h3><p>At Browskii nobody does brows on Monday and skin on Tuesday. You see the practitioner whose focus is skin, every visit.</p></div>
-      <div class="step"><div class="n">03</div><h3>Your plan, in writing</h3><p>What we will do in clinic, what you will do at home, how many visits, and what we are watching for. Nothing you did not agree to.</p></div>
+      <div class="step"><div class="n">01</div><h3>We look first</h3><p>Your history, your triggers, what you have tried, what your skin does on a bad day and a good one. Photos, so we can see change over time.</p></div>
+      <div class="step"><div class="n">02</div><h3>One person for skin</h3><p>Nobody at MOMO does brows on Monday and skin on Tuesday. You see the practitioner whose focus is skin, every visit.</p></div>
+      <div class="step"><div class="n">03</div><h3>Your plan, in writing</h3><p>What we do in clinic, what you do at home, how many visits, what we are watching for. Nothing you did not agree to.</p></div>
     </div>
 
-    <div class="journey">
+    <div class="phases">
       <div><b>Calm</b><p>Settle the reactivity first. Strip the routine back to what your skin can tolerate.</p></div>
-      <div><b>Strengthen</b><p>Rebuild the barrier and address the redness itself, at the pace your skin sets.</p></div>
+      <div><b>Strengthen</b><p>Rebuild the barrier and treat the redness itself, at the pace your skin sets.</p></div>
       <div><b>Maintain</b><p>Keep it there. A routine and a rhythm of visits that stops the slide back.</p></div>
     </div>
   </div>
@@ -215,14 +244,13 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         </ul>
         <div class="btns">
           <a class="btn blue" href="https://www.browskii.com.au/bookings">Book a skin consultation</a>
-          <a class="btn ghost-light" href="assessment.html">Tell me about your skin first</a>
         </div>
         <p class="fine">Booking fees are explained before you book, so there are no surprises. Treatments are only ever recommended after a consultation.</p>
       </div>
       <div class="side">
         <b>Not ready to book?</b>
-        <p>Take the two-minute skin assessment. You will get a text and an email straight away with a link to exactly what you can do at home, right now, for your redness.</p>
-        <div class="btns"><a class="btn ghost-light" href="assessment.html">Start the assessment</a></div>
+        <p>Take the sixty-second skin assessment. You get a text and an email straight away with a link to what you can do at home, right now, for your redness. Step one of five.</p>
+        <div class="btns"><a class="btn ghost-light" href="assessment.html">Tell me about your skin</a></div>
       </div>
     </div>
   </div>
@@ -235,21 +263,36 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <div>
         <div class="eyebrow">Ashleigh Hou</div>
         <h2 style="margin-top:.8rem">A nurse who chose skin.</h2>
-        <p class="quote">"My calling is more towards the skin side. I love rosacea."</p>
-        <p class="lead">Ashleigh is a Registered Nurse and the founder of Browskii, Brisbane's original cosmetic tattoo clinic. She can inject. She chooses not to. Her special interest is rosacea and reactive skin, the clients other clinics find too hard, and MOMO is where that work lives. She trained every practitioner in the building herself.</p>
-        <div class="btns"><a class="btn solid" href="https://www.browskii.com.au/bookings">Book with the skin team</a></div>
+        <p class="quote">"I can inject, but I prefer not to. My calling is more towards the skin side. I love rosacea. It's always just been such a big reward."</p>
+        <p class="lead">Ashleigh is a Registered Nurse and the founder of Browskii, Brisbane's original cosmetic tattoo clinic. MOMO is the skin clinic she is building beside it, with its own name, so the people who find her for rosacea are not looking at a brow menu. The reward she means: the client who went to the doctor, got the prescription, did not want to stay on it, and got to normal skin anyway.</p>
+        <div class="btns"><a class="btn solid" href="gallery.html">See her clients' skin</a></div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="block aglow">
+<section class="block" id="gallery" style="background:var(--paper);border-top:1px solid var(--line)">
   <div class="wrap">
-    <img src="assets/momo/m01.jpg" alt="Skincare at MOMO by Browskii">
+    <div class="two">
+      <img src="assets/momo/m06.jpg" alt="Close-up of clear, calm skin" style="aspect-ratio:4/3">
+      <div>
+        <div class="eyebrow">Before and after</div>
+        <h2 style="margin-top:.8rem">Real skin, shown with permission.</h2>
+        <p class="lead">Sorted by what was bothering the client, not by machine: redness and rosacea, texture and scarring, tired skin, firmness, and the brows Browskii is known for. Every photo shared with written consent. Cosmetic medicine is shown privately after your consultation.</p>
+        <div class="btns"><a class="btn solid" href="gallery.html">See the before and afters</a><a class="btn" href="https://www.browskii.com.au/bookings">Book a skin consultation</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block aglow" id="aglow">
+  <div class="wrap">
+    <img src="assets/momo/m01.jpg" alt="The skincare shelves at MOMO">
     <div>
-      <div class="eyebrow">Once your skin is calm</div>
-      <h2 style="margin-top:.8rem">Keep it that way, all year.</h2>
-      <p class="lead">Redness comes back when the routine stops. Aglow is the MOMO membership: your maintenance visits and your skincare looked after on one monthly plan, $300 a month, so the good skin is the default rather than the exception. Only ever offered after your consultation, and only if it is right for your skin.</p>
+      <div class="eyebrow">Step five &middot; keep it</div>
+      <h2 style="margin-top:.8rem">Aglow. Calm skin, all year.</h2>
+      <p class="lead">Redness comes back when the routine stops. Aglow is the MOMO membership: your maintenance visits and your skincare on one monthly plan, $300 a month, so calm skin is the default rather than the exception. Custom treatment plans are what MOMO clients already choose most, and Aglow is the version that keeps going. Offered after your consultation, only if it is right for your skin.</p>
+      <div class="btns"><a class="btn solid" href="https://www.browskii.com.au/bookings">Start with a consultation</a></div>
     </div>
   </div>
 </section>
@@ -258,32 +301,20 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   <div class="wrap">
     <div class="eyebrow">Questions we get every week</div>
     <h2 style="margin:.8rem 0 1.6rem">Before you book.</h2>
-    <div class="item open"><h3>Is this for rosacea?<span>+</span></h3><p>Yes. Redness, flushing, reactivity and rosacea, diagnosed or suspected, are the skin MOMO sees most, and the skin Ashleigh has a special interest in. If you have a diagnosis from your doctor, bring it. If you do not, the consultation is where we work out what is going on.</p></div>
-    <div class="item"><h3>Will treatment hurt or make the redness worse?<span>+</span></h3><p>Reactive skin gets treated gently or not at all. Nothing goes on your skin until we have seen it and talked it through, and the first phase of any plan is calming, not pushing. You will know exactly what to expect before anything happens.</p></div>
+    <div class="item open"><h3>Is this for rosacea?<span>+</span></h3><p>Yes. Redness, flushing, reactive skin and rosacea, diagnosed or suspected, are the skin MOMO sees most and the skin Ashleigh has a special interest in. If you have a diagnosis from your doctor, bring it. If you do not, the consultation is where we work out what is going on.</p></div>
+    <div class="item"><h3>I was prescribed something for it. Can I still come?<span>+</span></h3><p>Yes. Many of the people Ashleigh sees were offered a prescription and would rather not stay on it. Bring what you were given and what you decided. Nothing at MOMO replaces your doctor's advice, and the consultation is where the two get talked through properly.</p></div>
+    <div class="item"><h3>Will treatment hurt or make the redness worse?<span>+</span></h3><p>Reactive skin gets treated gently or not at all. Nothing goes on your skin until we have seen it and talked it through, and the first phase of any plan is calming. You will know exactly what to expect before anything happens.</p></div>
     <div class="item"><h3>Can I keep wearing makeup?<span>+</span></h3><p>Usually, yes, and part of the plan is often changing what you wear so it stops irritating the skin underneath. We talk about it at the consultation.</p></div>
     <div class="item"><h3>How many visits will I need?<span>+</span></h3><p>It depends on your skin, which is why we do not quote a number on a website. Your written plan sets it out after the consultation, and we review it as your skin changes.</p></div>
-    <div class="item"><h3>Do I need to stop my current skincare?<span>+</span></h3><p>Do not change anything before your consultation. Bring what you use, or photos of it, and we will go through it together. Often the first win is removing something, not adding something.</p></div>
+    <div class="item"><h3>Do I need to stop my current skincare first?<span>+</span></h3><p>Do not change anything before your consultation. Bring what you use, or photos of it, and we go through it together. Often the first win is removing something, not adding something.</p></div>
     <div class="item"><h3>Is there a booking fee?<span>+</span></h3><p>Booking fees and the cancellation policy are explained before you confirm, so there are no surprises. Cancellations need to be phoned through on 0417 322 366.</p></div>
-  </div>
-</section>
-
-<section class="block" id="gallery" style="background:var(--paper);border-top:1px solid var(--line)">
-  <div class="wrap">
-    <div class="two">
-      <img src="assets/momo/m05.jpg" alt="Skin at MOMO by Browskii" style="aspect-ratio:4/3">
-      <div>
-        <div class="eyebrow">Before and after</div>
-        <h2 style="margin-top:.8rem">Real skin, shown with permission.</h2>
-        <p class="lead">Client journeys sorted by what was bothering them, not by machine: redness and rosacea, texture and scarring, tired skin, firmness, and the brows Browskii is known for. Every photo shared with written consent. Cosmetic medicine is shown privately after your consultation.</p>
-        <div class="btns"><a class="btn solid" href="gallery.html">See the before and afters</a><a class="btn" href="assessment.html">Tell me about your skin</a></div>
-      </div>
-    </div>
+    <div class="btns"><a class="btn solid" href="https://www.browskii.com.au/bookings">Book a skin consultation</a><a class="btn" href="assessment.html">Tell me about your skin first</a></div>
   </div>
 </section>
 
 <section class="reviews">
   <div class="wrap">
-    <div><div class="eyebrow">What clients say</div><p style="margin-top:.4rem;color:var(--mute)">Browskii holds a 4.9 Google rating across 168 reviews. Skin reviews for MOMO go here as they come in.</p></div>
+    <div><div class="eyebrow">What clients say</div><p style="margin-top:.4rem;color:var(--mute)">Browskii holds a 4.9 Google rating across 168 reviews. MOMO's own skin reviews go here as they come in.</p></div>
     <div class="ph">Verified MOMO skin reviews, placeholder</div>
   </div>
 </section>
@@ -291,20 +322,20 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 <section class="part on-burg" id="browskii">
   <div class="wrap">
     <div>
-      <div class="eyebrow">Part of Browskii</div>
+      <div class="eyebrow">MOMO, by Browskii</div>
       <h2 style="margin-top:.8rem">Brows at Browskii. Skin at MOMO. Same building, never the same person.</h2>
-      <p class="lead">Browskii is Brisbane's original cosmetic tattoo clinic, thirteen thousand people strong on Instagram. MOMO is its skin and cosmetic medicine clinic, under the same roof at Newstead, with its own team and its own name so nobody is confused about who does what. One person, one craft.</p>
-      <div class="addr">27 Wyandra Street, Newstead QLD 4006<br><a href="tel:+61417322366">0417 322 366</a> &middot; <a href="mailto:hello@browskii.com.au">hello@browskii.com.au</a><br><a href="https://www.browskii.com.au">browskii.com.au</a></div>
+      <p class="lead">Browskii is Brisbane's original cosmetic tattoo clinic, thirteen thousand people strong on Instagram. MOMO is the skin clinic it grew, now with its own name so nobody is confused about who does what. If you already come to Browskii for brows, ask your artist about skin. If you found MOMO first, this is the whole story.</p>
+      <div class="addr">MOMO &middot; 27 Wyandra Street, Newstead QLD 4006<br><a href="tel:+61417322366">0417 322 366</a> &middot; <a href="mailto:hello@browskii.com.au">hello@browskii.com.au</a><br><a href="https://www.instagram.com/momo_by_browskii.au/">@momo_by_browskii.au</a></div>
     </div>
-    <img src="assets/momo/m02.jpg" alt="Browskii clients">
+    <img src="assets/momo/m02.jpg" alt="Three Browskii clients smiling together">
   </div>
 </section>
 
 <section class="close">
   <div class="wrap">
-    <div class="eyebrow" style="color:var(--burg)">Start here</div>
-    <h2 style="margin-top:.8rem">Stop covering it. Start with a consultation.</h2>
-    <p>Tell us about your skin in two minutes, or book the consultation now. Either way, the next thing that happens is someone whose whole job is skin looking at yours.</p>
+    <div class="eyebrow" style="color:var(--burg)">Step one</div>
+    <h2 style="margin-top:.8rem">Stop covering it. Tell me about your skin.</h2>
+    <p>Sixty seconds on your phone, then your at-home plan by text and email. Or go straight to the consultation. Either way, the next thing that happens is someone whose whole job is skin looking at yours.</p>
     <div class="btns">
       <a class="btn solid" href="assessment.html">Tell me about your skin</a>
       <a class="btn" href="https://www.browskii.com.au/bookings">Book a skin consultation</a>
@@ -314,8 +345,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
 <footer>
   <div class="wrap">
-    <span>&copy; 2026 MOMO by Browskii &middot; 27 Wyandra Street, Newstead</span>
-    <span>Concept by Clinic Catalyst &middot; logo from Instagram &middot; new brand colours to be confirmed with Ashleigh</span>
+    <span>&copy; 2026 MOMO &middot; 27 Wyandra Street, Newstead &middot; 0417 322 366</span>
+    <span>Concept by Clinic Catalyst &middot; logo from Instagram &middot; hero clip: Pexels, free licence, placeholder until MOMO's own footage &middot; brand colours to be confirmed with Ashleigh</span>
   </div>
 </footer>
 <a class="cc" href="https://clinic-catalyst-au.github.io/cc-report-browskii/">Concept by Clinic Catalyst</a>
