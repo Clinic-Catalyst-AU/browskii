@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>MOMO by Browskii - 60 Second Skin Assessment</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--blush:#8C3A4A;--blush-dark:#6E2536;--cream:#F4EDE4;--cream-2:#EADFD2;--forest:#1F3A5F;--ink:#1C1E1F;--white:#FFFFFF;}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Montserrat',sans-serif;background:var(--cream);color:var(--ink);min-height:100vh;display:flex;flex-direction:column;-webkit-font-smoothing:antialiased}
+header{padding:26px 24px;text-align:center;border-bottom:1px solid rgba(62,82,73,.12)}
+header .brand{font-family:'Cormorant Garamond',serif;font-size:26px;letter-spacing:.18em;text-transform:uppercase;color:var(--forest)}
+header .tag{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--blush-dark);margin-top:6px}
+main{flex:1;display:flex;align-items:center;justify-content:center;padding:32px 20px}
+.card{background:var(--white);width:100%;max-width:640px;padding:44px 40px;border:1px solid rgba(62,82,73,.1);box-shadow:0 20px 60px rgba(62,82,73,.08)}
+.progress{height:4px;background:var(--cream-2);margin-bottom:28px;overflow:hidden}
+.progress i{display:block;height:100%;width:0;background:var(--blush);transition:width .4s ease}
+.step{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--blush-dark);margin-bottom:12px}
+h1,h2{font-family:'Cormorant Garamond',serif;font-weight:500;color:var(--forest);line-height:1.15}
+h1{font-size:40px;margin-bottom:14px}
+h2{font-size:32px;margin-bottom:22px}
+p{font-size:15px;line-height:1.7;color:#4A4D4E}
+.lead{margin-bottom:28px}
+.opts{display:grid;gap:10px}
+.opt{display:block;width:100%;text-align:left;background:var(--cream);border:1px solid rgba(62,82,73,.12);padding:16px 18px;font-family:'Montserrat',sans-serif;font-size:15px;color:var(--ink);cursor:pointer;transition:all .15s}
+.opt:hover{border-color:var(--blush);background:var(--cream-2);transform:translateX(3px)}
+.btn{display:inline-block;background:var(--forest);color:#fff;border:none;padding:16px 34px;font-family:'Montserrat',sans-serif;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;text-decoration:none;margin-top:8px}
+.btn:hover{background:#2F4038}
+.btn.blush{background:var(--blush);color:var(--forest)}
+label{display:block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin:14px 0 6px}
+input{width:100%;padding:14px 16px;border:1px solid rgba(62,82,73,.2);background:var(--cream);font-family:'Montserrat',sans-serif;font-size:15px;color:var(--ink)}
+input:focus{outline:none;border-color:var(--blush)}
+.back{background:none;border:none;color:#8A8D8E;font-size:12px;letter-spacing:.1em;cursor:pointer;margin-top:18px;font-family:'Montserrat',sans-serif}
+.result{border-left:3px solid var(--blush);padding:14px 18px;background:var(--cream);margin:18px 0 22px}
+.result p{font-size:15px}
+.note{font-size:13px;color:#6B6E6F;margin-top:18px;line-height:1.6}
+footer{text-align:center;padding:22px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#8A8D8E}
+[hidden]{display:none!important}
+@media (max-width:560px){.card{padding:32px 22px}h1{font-size:32px}h2{font-size:26px}}
+</style>
+</head>
+<body>
+<header><div class="brand">MOMO by Browskii</div><div class="tag">Skin and cosmetic medicine &middot; Newstead</div></header>
+<main>
+<div class="card">
+  <div class="progress"><i id="bar"></i></div>
+
+  <section id="s0">
+    <div class="step">60 seconds &middot; Just between us</div>
+    <h1>What is your skin trying to tell you?</h1>
+    <p class="lead">Five quick questions. No judgement, nothing clinical. One of our skin practitioners reads every one and tells you what they would look at first.</p>
+    <button class="btn" onclick="go(1)">Start</button>
+  </section>
+
+  <section id="s1" hidden>
+    <div class="step">1 of 5</div>
+    <h2>Which of these sounds most like your skin right now?</h2>
+    <div class="opts">
+      <button class="opt" onclick="pick('concern','leak')">I am sick of constantly trying to cover facial redness</button>
+      <button class="opt" onclick="pick('concern','core')">My skin is sensitive and reacts to everything I put on it</button>
+      <button class="opt" onclick="pick('concern','meno')">Texture, scarring or breakouts I cannot get on top of</button>
+      <button class="opt" onclick="pick('concern','skin')">It looks tired and dull and I have lost the glow</button>
+      <button class="opt" onclick="pick('concern','energy')">Things are starting to loosen and I want to keep it firm</button>
+    </div>
+  </section>
+
+  <section id="s2" hidden>
+    <div class="step">2 of 5</div>
+    <h2>How long has it been going on?</h2>
+    <div class="opts">
+      <button class="opt" onclick="pick('length','new')">A few months</button>
+      <button class="opt" onclick="pick('length','year')">About a year</button>
+      <button class="opt" onclick="pick('length','years')">Years. I have just been living with it</button>
+    </div>
+    <button class="back" onclick="go(1)">&larr; Back</button>
+  </section>
+
+  <section id="s3" hidden>
+    <div class="step">3 of 5</div>
+    <h2>What have you tried so far?</h2>
+    <div class="opts">
+      <button class="opt" onclick="pick('tried','nothing')">Nothing yet, I did not know where to start</button>
+      <button class="opt" onclick="pick('tried','exercises')">Treatments here and there, on and off</button>
+      <button class="opt" onclick="pick('tried','gp')">Talked to my GP and was offered prescription creams or tablets</button>
+      <button class="opt" onclick="pick('tried','products')">A lot of products, without really understanding my skin</button>
+    </div>
+    <button class="back" onclick="go(2)">&larr; Back</button>
+  </section>
+
+  <section id="s4" hidden>
+    <div class="step">4 of 5</div>
+    <h2>If this were sorted, what would change?</h2>
+    <div class="opts">
+      <button class="opt" onclick="pick('why','confidence')">I would stop covering it with makeup every morning</button>
+      <button class="opt" onclick="pick('why','active')">I would go bare-faced without thinking about it</button>
+      <button class="opt" onclick="pick('why','intimacy')">I would stop spending money on things that do not work</button>
+      <button class="opt" onclick="pick('why','mirror')">I would like what I see in the mirror</button>
+    </div>
+    <button class="back" onclick="go(3)">&larr; Back</button>
+  </section>
+
+  <section id="s5" hidden>
+    <div class="step">5 of 5</div>
+    <h2>When would you like to do something about it?</h2>
+    <div class="opts">
+      <button class="opt" onclick="pick('when','now')">As soon as possible</button>
+      <button class="opt" onclick="pick('when','month')">In the next month or so</button>
+      <button class="opt" onclick="pick('when','looking')">Just finding out what is possible for now</button>
+    </div>
+    <button class="back" onclick="go(4)">&larr; Back</button>
+  </section>
+
+  <section id="s6" hidden>
+    <div class="step">Your result</div>
+    <h2 id="rTitle">Here is what we would look at first.</h2>
+    <div class="result"><p id="rBody"></p></div>
+    <p>Pop your details below and one of our skin practitioners will send you a short personal note, plus the next step. Nothing salesy, nothing you cannot opt out of.</p>
+    <label for="fn">First name</label><input id="fn" type="text" placeholder="Your first name">
+    <label for="mob">Mobile</label><input id="mob" type="tel" placeholder="04..">
+    <label for="em">Email</label><input id="em" type="email" placeholder="you@email.com">
+    <button class="btn blush" onclick="submitLead()">Send me my note</button>
+    <p class="note">By sending, you agree to hear from Browskii by text and email. Unsubscribe any time.</p>
+  </section>
+
+  <section id="s7" hidden>
+    <div class="step">Thank you</div>
+    <h2>Got it. Here is the next step.</h2>
+    <p class="lead">Most people start with a skin consultation at Newstead, where one of our skin practitioners works out what is actually going on and maps the right plan. Booking fees are explained before you book, so there are no surprises.</p>
+    <a class="btn" href="https://www.browskii.com.au/bookings" target="_blank">Book my skin consultation</a>
+    <p class="note">27 Wyandra Street, Newstead &middot; one person, one craft</p>
+  </section>
+</div>
+</main>
+<footer>Demo built by Clinic Catalyst for Browskii and MOMO</footer>
+<script>
+const a={};
+function go(n){for(let i=0;i<=7;i++){const s=document.getElementById('s'+i);if(s)s.hidden=(i!==n)}document.getElementById('bar').style.width=Math.min(100,Math.round((n/6)*100))+'%';window.scrollTo({top:0,behavior:'smooth'})}
+function pick(k,v){a[k]=v;const order={concern:2,length:3,tried:4,why:5,when:6};if(k==='when')render();go(order[k])}
+function render(){
+  const c=a.concern;
+  const map={
+    leak:"Redness that keeps coming back is usually your skin barrier asking for help, and it is one of the things we love treating most. The first step is a skin consultation: we work out what is driving the flushing, then build a plan, which might include light-based treatment, needling, or the right homecare. The goal is skin you stop covering.",
+    core:"Reactive, sensitive skin needs a plan, not another product. Our skin practitioner starts by finding out what your skin is reacting to, then rebuilds from there with treatments and homecare that calm it rather than fight it.",
+    meno:"Texture, scarring and breakouts respond well to a staged plan rather than one-off treatments. We start with a consultation to understand what is happening under the surface, then map the sequence that gets you there.",
+    skin:"Tired, dull skin usually comes down to hydration, collagen and a routine that has stopped working. A skin consultation looks at what your skin is doing and builds a plan from there, treatments and homecare together.",
+    energy:"Firmness is easier to keep than to chase. We look at where things are starting to change and build a plan around it, from needling and tightening to the homecare that holds the result."
+  };
+  document.getElementById('rBody').textContent=map[c]||map.leak;
+  if(a.tried==='gp')document.getElementById('rBody').textContent+=" You mentioned prescriptions were offered. Plenty of people would rather improve the skin itself, and that is what the consultation is for.";
+}
+function submitLead(){const fn=document.getElementById('fn').value.trim(),mob=document.getElementById('mob').value.trim();if(!fn||!mob){alert('Just your first name and mobile so we can reach you.');return}console.log('lead',{...a,fn,mob,em:document.getElementById('em').value});go(7)}
+</script>
+</body>
+</html>
