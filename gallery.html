@@ -451,21 +451,17 @@ body.locked{overflow:hidden}
     document.querySelectorAll('.hero .copy').forEach(function(e){e.classList.add('show');});
     setTimeout(function(){document.querySelectorAll('.hero .copy').forEach(function(e){e.classList.add('show');});},60);
   }
-  try{ if(localStorage.getItem(K)==='1'){ open_(true); } }catch(e){}
+  /* the gate shows every visit: the unlock is the moment */
   document.getElementById('gf').addEventListener('submit',function(ev){
     ev.preventDefault();
     if(inp.value.trim().toLowerCase()===CODE){
-      try{localStorage.setItem(K,'1');}catch(e){}
       open_(false);
     } else {
       hint.textContent='That code is not right. Ask at the clinic.';
       inp.classList.remove('shake'); void inp.offsetWidth; inp.classList.add('shake');
     }
   });
-  document.getElementById('relock').addEventListener('click',function(){
-    try{localStorage.removeItem('momo-gallery-unlocked');}catch(e){}
-    location.reload();
-  });
+  document.getElementById('relock').addEventListener('click',function(){ location.reload(); });
   function show(id){
     document.querySelectorAll('.pane').forEach(function(p){p.classList.toggle('on',p.id===id);});
     document.querySelectorAll('.tab').forEach(function(t){t.classList.toggle('on',t.dataset.go===id);});
