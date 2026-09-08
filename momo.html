@@ -32,6 +32,10 @@ a{color:inherit}
 .btn:hover{transform:translateY(-1px);background:var(--burg-soft);color:var(--cream);border-color:var(--burg-soft)}
 .btn.blue:hover{background:var(--blue-ink);border-color:var(--blue-ink);color:#fff}
 .btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:1.8rem}
+.alt{margin-top:.9rem;font-size:.86rem;color:rgba(246,241,234,.72)}
+.alt a{color:var(--blue);text-decoration:underline;text-underline-offset:3px}
+.alt.dark{color:var(--mute)}
+.alt.dark a{color:var(--burg)}
 
 header{position:sticky;top:0;z-index:9;background:rgba(246,241,234,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:70px;gap:16px}
@@ -154,8 +158,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 <header>
   <div class="wrap nav">
     <a class="brand" href="#top"><img src="assets/momo/logo.png" alt="MOMO"><span><b>MOMO</b><small>Skin &middot; Newstead</small></span></a>
-    <nav class="links"><a href="#how">How it works</a><a href="#consult">Your consultation</a><a href="gallery.html">Before and after</a><a href="#ashleigh">Ashleigh</a><a href="#faq">Questions</a></nav>
-    <a class="btn solid" href="https://www.browskii.com.au/bookings">Book a skin consultation</a>
+    <nav class="links"><a href="#how">How it works</a><a href="gallery.html">Before and after</a><a href="#ashleigh">Ashleigh</a><a href="#faq">Questions</a><a href="https://www.browskii.com.au/bookings">Been before? Book</a></nav>
+    <a class="btn solid" href="assessment.html">Not sure where to start?</a>
   </div>
 </header>
 
@@ -166,13 +170,11 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   <div class="veil"></div>
   <div class="wrap">
     <div class="copy">
-      <div class="eyebrow">Redness &middot; rosacea &middot; reactive skin &middot; Newstead</div>
+      <div class="eyebrow">Not sure where to start? &middot; Redness &middot; rosacea &middot; Newstead</div>
       <h1 style="margin-top:1rem">Tried everything and your skin is <em>still red?</em></h1>
       <p class="lead">The cream, the doctor, the prescription you did not want to stay on. MOMO is skin, led by a Registered Nurse who chose skin over injecting and has a special interest in rosacea. It starts with a consultation.</p>
-      <div class="btns">
-        <a class="btn blue" href="assessment.html">Tell me about your skin</a>
-        <a class="btn ghost-light" href="https://www.browskii.com.au/bookings">Book a skin consultation</a>
-      </div>
+      <div class="btns"><a class="btn blue" href="assessment.html">Start with the 60-second skin assessment</a></div>
+      <p class="alt">Been to Browskii before? <a href="https://www.browskii.com.au/bookings">Book your skin appointment</a></p>
       <div class="cap">A light-based skin treatment &middot; 27 Wyandra Street, Newstead</div>
     </div>
   </div>
@@ -183,13 +185,14 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <div class="eyebrow">How it works at MOMO</div>
     <h2 style="margin-top:.8rem">Five steps. You always know the next one.</h2>
     <ol>
-      <li><i>Step one</i><b>Tell me about your skin</b>Sixty seconds, on your phone. What flares it, what you have tried, what you want gone.</li>
+      <li><i>Step one</i><b>Not sure where to start? Start here</b>You have never been in and you do not know what is right for your skin, so you start with the 60-second assessment on your phone. What flares it, what you have tried, what you want gone.</li>
       <li><i>Step two</i><b>Your at-home plan</b>A text and an email straight away with what you can do at home, right now, for your redness.</li>
       <li><i>Step three</i><b>Your skin consultation</b>In the chair at MOMO with someone whose whole job is skin. We look properly before anything is recommended.</li>
       <li><i>Step four</i><b>Your plan for your skin</b>Written down: clinic, home, how many visits, what we are watching for. Nothing you did not agree to.</li>
       <li><i>Step five</i><b>Keep it with Aglow</b>Once the redness has settled, a monthly plan keeps it that way. Offered only if it is right for you.</li>
     </ol>
-    <div class="btns"><a class="btn solid" href="assessment.html">Start with step one</a></div>
+    <div class="btns"><a class="btn solid" href="assessment.html">Start with the 60-second skin assessment</a></div>
+    <p class="alt dark">Been to Browskii before and know what you want? Skip the questions. <a href="https://www.browskii.com.au/bookings">Book your skin appointment</a></p>
   </div>
 </section>
 
@@ -200,7 +203,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <div><b>The prescription</b>The doctor offered it. You would rather not stay on it.</div>
     <div><b>Reactive skin</b>Everything stings. Nothing feels safe to put on.</div>
     <div><b>The makeup</b>Never quite covers it. Irritates it more.</div>
-    <div class="go">Sound like you? <a href="#consult">See what happens at your consultation</a> <span>or</span> <a href="assessment.html">tell me about your skin</a></div>
+    <div class="go">Sound like you? <a href="assessment.html">Start with the 60-second skin assessment</a> <span>Been to Browskii before?</span> <a href="https://www.browskii.com.au/bookings">Book your skin appointment</a></div>
   </div>
 </section>
 
@@ -242,15 +245,13 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
           <li><i>&#10003;</i> A written plan: clinic, home, how many visits, what we are watching for</li>
           <li><i>&#10003;</i> Honest answers, including "not yet" if your skin is not ready for a treatment</li>
         </ul>
-        <div class="btns">
-          <a class="btn blue" href="https://www.browskii.com.au/bookings">Book a skin consultation</a>
-        </div>
+        <p class="alt">Been to Browskii before? <a href="https://www.browskii.com.au/bookings">Book your skin appointment</a></p>
         <p class="fine">Booking fees are explained before you book, so there are no surprises. Treatments are only ever recommended after a consultation.</p>
       </div>
       <div class="side">
-        <b>Not ready to book?</b>
-        <p>Take the sixty-second skin assessment. You get a text and an email straight away with a link to what you can do at home, right now, for your redness. Step one of five.</p>
-        <div class="btns"><a class="btn ghost-light" href="assessment.html">Tell me about your skin</a></div>
+        <b>Not sure where to start?</b>
+        <p>Never been in, and not sure what is right for your skin? Start with the 60-second assessment. You get a text and an email straight away with what you can do at home, right now, for your redness. Step one of five.</p>
+        <div class="btns"><a class="btn blue" href="assessment.html">Start with the 60-second skin assessment</a></div>
       </div>
     </div>
   </div>
@@ -279,7 +280,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         <div class="eyebrow">Before and after</div>
         <h2 style="margin-top:.8rem">Real skin, shown with permission.</h2>
         <p class="lead">Sorted by what was bothering the client: redness and rosacea, texture and scarring, tired skin, firmness, and the brows Browskii is known for. Every photo shared with written consent. Cosmetic medicine is shown privately after your consultation.</p>
-        <div class="btns"><a class="btn solid" href="gallery.html">See the before and afters</a><a class="btn" href="https://www.browskii.com.au/bookings">Book a skin consultation</a></div>
+        <div class="btns"><a class="btn solid" href="gallery.html">See the before and afters</a></div>
+        <p class="alt dark">Been to Browskii before? <a href="https://www.browskii.com.au/bookings">Book your skin appointment</a></p>
       </div>
     </div>
   </div>
@@ -292,7 +294,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <div class="eyebrow">Step five &middot; keep it</div>
       <h2 style="margin-top:.8rem">Aglow. Calm skin, all year.</h2>
       <p class="lead">Redness comes back when the routine stops. Aglow is the MOMO membership: your maintenance visits and your skincare on one monthly plan, $300 a month, so calm skin is what you have most days. Custom treatment plans are what MOMO clients already choose most, and Aglow is the version that keeps going. Offered after your consultation, only if it is right for your skin.</p>
-      <div class="btns"><a class="btn solid" href="https://www.browskii.com.au/bookings">Start with a consultation</a></div>
+      <div class="btns"><a class="btn solid" href="assessment.html">Start with the 60-second skin assessment</a></div>
+      <p class="alt dark">Been to Browskii before? <a href="https://www.browskii.com.au/bookings">Book your skin appointment</a></p>
     </div>
   </div>
 </section>
@@ -308,7 +311,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <div class="item"><h3>How many visits will I need?<span>+</span></h3><p>It depends on your skin, which is why we do not quote a number on a website. Your written plan sets it out after the consultation, and we review it as your skin changes.</p></div>
     <div class="item"><h3>Do I need to stop my current skincare first?<span>+</span></h3><p>Do not change anything before your consultation. Bring what you use, or photos of it, and we go through it together. Often the first win is removing one product.</p></div>
     <div class="item"><h3>Is there a booking fee?<span>+</span></h3><p>Booking fees and the cancellation policy are explained before you confirm, so there are no surprises. Cancellations need to be phoned through on 0417 322 366.</p></div>
-    <div class="btns"><a class="btn solid" href="https://www.browskii.com.au/bookings">Book a skin consultation</a><a class="btn" href="assessment.html">Tell me about your skin first</a></div>
+    <div class="btns"><a class="btn solid" href="assessment.html">Start with the 60-second skin assessment</a></div>
+    <p class="alt dark">Been to Browskii before? <a href="https://www.browskii.com.au/bookings">Book your skin appointment</a></p>
   </div>
 </section>
 
@@ -333,13 +337,11 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
 <section class="close">
   <div class="wrap">
-    <div class="eyebrow" style="color:var(--burg)">Step one</div>
-    <h2 style="margin-top:.8rem">Stop covering it. Tell me about your skin.</h2>
-    <p>Sixty seconds on your phone, then your at-home plan by text and email. Or go straight to the consultation. Either way, the next thing that happens is someone whose whole job is skin looking at yours.</p>
-    <div class="btns">
-      <a class="btn solid" href="assessment.html">Tell me about your skin</a>
-      <a class="btn" href="https://www.browskii.com.au/bookings">Book a skin consultation</a>
-    </div>
+    <div class="eyebrow" style="color:var(--burg)">Not sure where to start?</div>
+    <h2 style="margin-top:.8rem">Stop covering it. Start with the skin assessment.</h2>
+    <p>Sixty seconds on your phone, then your at-home plan by text and email. The next thing that happens is someone whose whole job is skin looking at yours.</p>
+    <div class="btns"><a class="btn solid" href="assessment.html">Start with the 60-second skin assessment</a></div>
+    <p class="alt dark" style="margin-top:1rem">Been to Browskii before and know what you want? <a href="https://www.browskii.com.au/bookings">Book your skin appointment</a></p>
   </div>
 </section>
 
