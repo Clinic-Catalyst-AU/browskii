@@ -113,9 +113,8 @@ footer{text-align:center;padding:22px;font-size:11px;letter-spacing:.12em;text-t
   </section>
 
   <section id="s6" hidden>
-    <div class="step">Your result</div>
-    <h2 id="rTitle">Here is what we would look at first.</h2>
-    <div class="result"><p id="rBody"></p></div>
+    <div class="step">Last step</div>
+    <h2 id="rTitle">Submit your details for MOMO's best skin hacks to support your skin.</h2>
     <p>Pop your details in. You will get an email and a text straight away with a link to exactly what you can do at home, right now, for your skin.</p>
     <label for="fn">First name</label><input id="fn" type="text" placeholder="Your first name">
     <label for="mob">Mobile</label><input id="mob" type="tel" placeholder="04..">
@@ -127,6 +126,7 @@ footer{text-align:center;padding:22px;font-size:11px;letter-spacing:.12em;text-t
   <section id="s7" hidden>
     <div class="step">Thank you</div>
     <h2>Check your texts and your inbox.</h2>
+    <div class="result"><p id="rBody"></p></div>
     <p class="lead">Your link is on its way by text and email: exactly what you can do at home right now for your skin. When you are ready, most people book a skin consultation at Newstead, where one of our skin practitioners works out what is actually going on and maps the right plan. Booking fees are explained before you book, so there are no surprises.</p>
     <a class="btn" href="https://www.browskii.com.au/bookings" target="_blank">Book my skin consultation</a>
     <p class="note">27 Wyandra Street, Newstead &middot; one person, one craft</p>
@@ -147,6 +147,8 @@ function render(){
     skin:"Tired, dull skin usually comes down to hydration, collagen and a routine that has stopped working. A skin consultation looks at what your skin is doing and builds a plan from there, treatments and homecare together.",
     energy:"Firmness is easier to keep than to chase. We look at where things are starting to change and build a plan around it, from needling and tightening to the homecare that holds the result."
   };
+  const t={leak:"redness",core:"sensitive, reactive skin",meno:"texture, scarring and breakouts",skin:"tired, dull skin",energy:"firmness"};
+  document.getElementById('rTitle').textContent="Submit your details for MOMO's best skin hacks to support your "+(t[c]||'skin')+".";
   document.getElementById('rBody').textContent=map[c]||map.leak;
   if(a.tried==='gp')document.getElementById('rBody').textContent+=" You mentioned prescriptions were offered. Plenty of people would rather improve the skin itself, and that is what the consultation is for.";
 }
