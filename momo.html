@@ -38,6 +38,9 @@ header{position:sticky;top:0;z-index:9;background:rgba(246,241,234,.94);backdrop
 .brand img{width:44px;height:44px;border-radius:50%;object-fit:cover}
 .brand b{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;letter-spacing:.14em;color:var(--burg)}
 .brand small{display:block;font-family:'Jost',sans-serif;font-size:.58rem;letter-spacing:.24em;text-transform:uppercase;color:var(--mute);margin-top:-2px}
+.links{display:flex;gap:22px;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase}
+.links a{text-decoration:none;color:var(--burg)}
+@media (max-width:760px){.links{display:none}}
 .nav .btn{padding:.7rem 1.2rem;font-size:.64rem}
 @media (max-width:640px){.nav .btn{padding:.6rem .9rem;font-size:.58rem;letter-spacing:.12em}}
 
@@ -138,6 +141,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 <header>
   <div class="wrap nav">
     <a class="brand" href="#top"><img src="assets/momo/logo.png" alt="MOMO"><span><b>MOMO</b><small>by Browskii &middot; Newstead</small></span></a>
+    <nav class="links"><a href="#what">Skin at MOMO</a><a href="gallery.html">Before and after</a><a href="#ashleigh">Ashleigh</a><a href="#faq">Questions</a></nav>
     <a class="btn solid" href="https://www.browskii.com.au/bookings">Book a skin consultation</a>
   </div>
 </header>
@@ -260,6 +264,20 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <div class="item"><h3>How many visits will I need?<span>+</span></h3><p>It depends on your skin, which is why we do not quote a number on a website. Your written plan sets it out after the consultation, and we review it as your skin changes.</p></div>
     <div class="item"><h3>Do I need to stop my current skincare?<span>+</span></h3><p>Do not change anything before your consultation. Bring what you use, or photos of it, and we will go through it together. Often the first win is removing something, not adding something.</p></div>
     <div class="item"><h3>Is there a booking fee?<span>+</span></h3><p>Booking fees and the cancellation policy are explained before you confirm, so there are no surprises. Cancellations need to be phoned through on 0417 322 366.</p></div>
+  </div>
+</section>
+
+<section class="block" id="gallery" style="background:var(--paper);border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="two">
+      <img src="assets/momo/m05.jpg" alt="Skin at MOMO by Browskii" style="aspect-ratio:4/3">
+      <div>
+        <div class="eyebrow">Before and after</div>
+        <h2 style="margin-top:.8rem">Real skin, shown with permission.</h2>
+        <p class="lead">Client journeys sorted by what was bothering them, not by machine: redness and rosacea, texture and scarring, tired skin, firmness, and the brows Browskii is known for. Every photo shared with written consent. Cosmetic medicine is shown privately after your consultation.</p>
+        <div class="btns"><a class="btn solid" href="gallery.html">See the before and afters</a><a class="btn" href="assessment.html">Tell me about your skin</a></div>
+      </div>
+    </div>
   </div>
 </section>
 
