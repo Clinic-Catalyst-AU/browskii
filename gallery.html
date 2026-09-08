@@ -191,22 +191,6 @@ body.locked{overflow:hidden}
 .tab{font-family:'Jost',sans-serif;font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;padding:.65rem 1.1rem;border:1px solid var(--line);background:transparent;cursor:pointer;color:var(--mute)}
 .tab.on{background:var(--burg);border-color:var(--burg);color:var(--cream)}
 
-/* ---- concern list, hover preview (Dr Mandi pattern) ---- */
-.mirror{padding:64px 0 8px}
-.mlist{margin-top:2rem;border-top:1px solid var(--line)}
-.mrow{display:flex;align-items:center;gap:22px;padding:1.5rem 0;border-bottom:1px solid var(--line);text-decoration:none;color:inherit;position:relative;transition:.28s}
-.mrow:hover{padding-left:14px}
-.mrow .idx{font-family:'Jost',sans-serif;font-size:.62rem;letter-spacing:.22em;color:var(--mute);flex:0 0 54px}
-.mrow h3{font-size:1.55rem;color:var(--burg);transition:.28s}
-.mrow:hover h3{color:var(--blue-ink)}
-.mrow .desc{font-size:.88rem;color:var(--mute);margin-top:.25rem;max-width:56ch}
-.mrow .arrow{margin-left:auto;font-size:1.2rem;color:var(--blue-ink);opacity:0;transform:translateX(-8px);transition:.28s}
-.mrow:hover .arrow{opacity:1;transform:none}
-#peek{position:fixed;width:230px;aspect-ratio:4/5;pointer-events:none;z-index:40;opacity:0;transform:translate(-50%,-50%) scale(.94);transition:opacity .25s, transform .25s;box-shadow:0 24px 60px rgba(46,15,16,.4);overflow:hidden;border:1px solid rgba(202,217,253,.5)}
-#peek.on{opacity:1;transform:translate(-50%,-50%) scale(1)}
-#peek img{width:100%;height:100%;object-fit:cover;display:block}
-#peek .tag{position:absolute;left:0;right:0;bottom:0;background:rgba(69,24,23,.9);color:var(--cream);font-size:.56rem;letter-spacing:.2em;text-transform:uppercase;padding:.5rem .6rem;text-align:center}
-@media (max-width:820px){#peek{display:none}.mrow h3{font-size:1.25rem}}
 /* ---- pairs ---- */
 .sect{padding:64px 0;border-top:1px solid var(--line)}
 .sect .lede{margin-top:.9rem;color:var(--mute)}
@@ -293,44 +277,6 @@ body.locked{overflow:hidden}
 </div>
 
 <div class="pane on" id="skin">
-<div class="mirror"><div class="wrap">
-  <p class="eyebrow">Skin concerns</p>
-  <h2 style="margin-top:.6rem">Start with what <em style="font-style:italic;color:var(--blue-ink)">you see in the mirror.</em></h2>
-  <p class="lede" style="margin-top:.9rem">Hover a concern to see it, and tap through to the real thing on Ashleigh's Instagram.</p>
-  <div class="mlist">
-      <a class="mrow" href="https://www.instagram.com/p/Dbm6u9VxGJI/" target="_blank" rel="noopener" data-img="assets/momo/social/rosacea-ba.jpg">
-        <span class="idx">No. 01</span>
-        <div><h3>Redness and rosacea</h3><div class="desc">The flush that comes back after heat, wine or a hot shower.</div></div>
-        <span class="arrow">&rarr;</span>
-      </a>
-      <a class="mrow" href="https://www.instagram.com/p/DZZkWytRQ0c/" target="_blank" rel="noopener" data-img="assets/momo/social/ipl-pigment-ba.jpg">
-        <span class="idx">No. 02</span>
-        <div><h3>Pigmentation and sun damage</h3><div class="desc">Freckling and uneven tone from a Queensland childhood.</div></div>
-        <span class="arrow">&rarr;</span>
-      </a>
-      <a class="mrow" href="https://www.instagram.com/p/DISixKSy-MM/" target="_blank" rel="noopener" data-img="assets/momo/social/acne-ba.jpg">
-        <span class="idx">No. 03</span>
-        <div><h3>Acne and congestion</h3><div class="desc">Breakouts, and the marks they leave behind.</div></div>
-        <span class="arrow">&rarr;</span>
-      </a>
-      <a class="mrow" href="https://www.instagram.com/reel/DbC4j2tx9GE/" target="_blank" rel="noopener" data-img="assets/momo/social/pigment-rosacea-reel.jpg">
-        <span class="idx">No. 04</span>
-        <div><h3>Texture and scarring</h3><div class="desc">The skin you only notice in the car mirror.</div></div>
-        <span class="arrow">&rarr;</span>
-      </a>
-      <a class="mrow" href="https://www.instagram.com/reel/DcK5JL-xVIW/" target="_blank" rel="noopener" data-img="assets/momo/social/glassifier-reel.jpg">
-        <span class="idx">No. 05</span>
-        <div><h3>Glass skin</h3><div class="desc">The finish you keep sending us screenshots of.</div></div>
-        <span class="arrow">&rarr;</span>
-      </a>
-      <a class="mrow" href="https://www.instagram.com/reel/Dbm3pNgB259/" target="_blank" rel="noopener" data-img="assets/momo/social/brow-reveal-reel.jpg">
-        <span class="idx">No. 06</span>
-        <div><h3>Brows and lip blush</h3><div class="desc">The craft that built Browskii.</div></div>
-        <span class="arrow">&rarr;</span>
-      </a>
-  </div>
-</div></div>
-
 <div class="sect"><div class="wrap">
   <p class="eyebrow">Redness and rosacea</p>
   <h2>The cheeks that are red in every photo.</h2>
@@ -488,7 +434,6 @@ body.locked{overflow:hidden}
 </div>
 
 
-<div id="peek"><img id="peekimg" src="" alt=""><span class="tag">Watch on Instagram</span></div>
 <footer>
   <div class="wrap">
     <span>&copy; 2026 MOMO &middot; 27 Wyandra Street, Newstead &middot; 0417 322 366</span>
@@ -530,12 +475,6 @@ body.locked{overflow:hidden}
   document.getElementById('p-med').addEventListener('click',function(){show('cosmetic-medicine');document.getElementById('cosmetic-medicine').scrollIntoView({behavior:'smooth'});});
   document.querySelectorAll('.tab').forEach(function(t){t.addEventListener('click',function(){show(t.dataset.go);});});
 
-  var peek=document.getElementById('peek'), pimg=document.getElementById('peekimg');
-  document.querySelectorAll('.mrow').forEach(function(r){
-    r.addEventListener('mouseenter',function(){ pimg.src=r.dataset.img; peek.classList.add('on'); });
-    r.addEventListener('mouseleave',function(){ peek.classList.remove('on'); });
-    r.addEventListener('mousemove',function(e){ peek.style.left=e.clientX+'px'; peek.style.top=e.clientY+'px'; });
-  });
   if(location.hash==='#cosmetic-medicine') show('cosmetic-medicine');
 })();
 </script>
