@@ -165,6 +165,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 #peek{position:fixed;width:230px;aspect-ratio:4/5;pointer-events:none;z-index:40;opacity:0;transform:translate(-50%,-50%) scale(.94);transition:opacity .25s, transform .25s;box-shadow:0 24px 60px rgba(46,15,16,.4);overflow:hidden;border:1px solid rgba(202,217,253,.5)}
 #peek.on{opacity:1;transform:translate(-50%,-50%) scale(1)}
 #peek img{width:100%;height:100%;object-fit:cover;display:block}
+#peek video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .3s}
 #peek .tag{position:absolute;left:0;right:0;bottom:0;background:rgba(69,24,23,.9);color:var(--cream);font-size:.56rem;letter-spacing:.2em;text-transform:uppercase;padding:.5rem .6rem;text-align:center}
 @media (max-width:820px){#peek{display:none}.mrow h3{font-size:1.25rem}}
 
@@ -186,6 +187,20 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 </style>
 </head>
 <body>
+<script>
+/* open every page at the top: stop the browser restoring the last scroll position on refresh or Back */
+(function(){
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  function toTop(){
+    if (location.hash) return;
+    var r = document.documentElement, prev = r.style.scrollBehavior;
+    r.style.scrollBehavior = 'auto'; window.scrollTo(0, 0); r.style.scrollBehavior = prev;
+  }
+  toTop();
+  window.addEventListener('load', toTop);
+  window.addEventListener('pageshow', function(e){ if (e.persisted) toTop(); });
+})();
+</script>
 
 <div class="house">
   <div class="wrap">
@@ -268,7 +283,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         <div><h3>Acne and congestion</h3><div class="desc">Breakouts, and the marks they leave behind.</div></div>
         <span class="arrow">&rarr;</span>
       </a>
-      <a class="mrow" href="https://www.instagram.com/reel/DbC4j2tx9GE/" target="_blank" rel="noopener" data-img="assets/momo/social/pigment-rosacea-reel.jpg">
+      <a class="mrow" href="https://www.instagram.com/reel/DbC4j2tx9GE/" target="_blank" rel="noopener" data-img="assets/momo/social/pigment-rosacea-reel.jpg" data-video="assets/momo/clips/pigment-rosacea.mp4">
         <span class="idx">No. 04</span>
         <div><h3>Texture and scarring</h3><div class="desc">The skin you only notice in the car mirror.</div></div>
         <span class="arrow">&rarr;</span>
@@ -425,7 +440,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   </div>
 </section>
 
-<div id="peek"><img id="peekimg" src="" alt=""><span class="tag">Watch on Instagram</span></div>
+<div id="peek"><img id="peekimg" src="" alt=""><video id="peekvid" muted loop playsinline preload="none"></video><span class="tag">Watch on Instagram</span></div>
 <footer>
   <div class="wrap">
     <span>&copy; 2026 MOMO &middot; 27 Wyandra Street, Newstead &middot; 0417 322 366</span>
@@ -435,10 +450,11 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 <a class="cc" href="https://clinic-catalyst-au.github.io/cc-report-browskii/">Concept by Clinic Catalyst</a>
 
 <script>
-var peek=document.getElementById('peek'), pimg=document.getElementById('peekimg');
+var peek=document.getElementById('peek'), pimg=document.getElementById('peekimg'), pvid=document.getElementById('peekvid'); pvid.muted=true;
   document.querySelectorAll('.mrow').forEach(function(r){
-    r.addEventListener('mouseenter',function(){ pimg.src=r.dataset.img; peek.classList.add('on'); });
-    r.addEventListener('mouseleave',function(){ peek.classList.remove('on'); });
+    r.addEventListener('mouseenter',function(){ pimg.src=r.dataset.img; peek.classList.add('on');
+      if(r.dataset.video){ pvid.src=r.dataset.video; pvid.style.opacity=1; var pp=pvid.play(); if(pp&&pp.catch) pp.catch(function(){}); } else { pvid.pause(); pvid.style.opacity=0; } });
+    r.addEventListener('mouseleave',function(){ peek.classList.remove('on'); pvid.pause(); pvid.style.opacity=0; });
     r.addEventListener('mousemove',function(e){ peek.style.left=e.clientX+'px'; peek.style.top=e.clientY+'px'; });
   });
 document.querySelectorAll('.faq .item h3').forEach(function(h){h.addEventListener('click',function(){h.parentElement.classList.toggle('open');})});

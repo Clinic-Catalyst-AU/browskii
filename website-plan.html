@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>Browskii | Cosmetic tattoo, brows and lashes | Newstead Brisbane</title>
+<title>Browskii Website Plan | Search, tracking and AI visibility</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -434,8 +434,83 @@ header{animation-delay:.1s}
 .work .grid a.playing .pr{opacity:0}
 </style>
 
+
+<style>
+/* ============ website plan ============ */
+.pl .wrap{max-width:1080px}
+.phero{background:var(--cream);position:relative;overflow:hidden}
+.phero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(31,26,23,.35) 1px,transparent 1px);background-size:34px 34px;opacity:.1;mask-image:radial-gradient(ellipse at 80% 10%,#000 20%,transparent 65%);pointer-events:none}
+.phero .wrap{position:relative;padding-top:88px;padding-bottom:56px}
+.phero h1{font-size:clamp(2.5rem,6.2vw,4.8rem);line-height:1;letter-spacing:-.015em;max-width:15ch}
+.phero h1 em{font-style:italic;color:var(--sand-deep);font-weight:400}
+.phero .lead{margin-top:1.4rem;color:var(--mute);font-size:1.1rem;max-width:62ch}
+.phero .src{margin-top:1.4rem;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mute)}
+
+.wins{background:var(--bink);color:var(--cream)}
+.wins .wrap{padding-top:64px;padding-bottom:64px}
+.wins .eyebrow{color:var(--sand)}
+.wins h2{color:var(--cream);margin-top:.6rem}
+.wins .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:2rem;border:1px solid rgba(246,241,234,.14)}
+@media (max-width:900px){.wins .grid{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.wins .grid{grid-template-columns:1fr}}
+.win{padding:26px 22px;border-right:1px solid rgba(246,241,234,.14);border-bottom:1px solid rgba(246,241,234,.14)}
+.win b{display:block;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:3.2rem;line-height:1;color:var(--cream)}
+.win b small{font-size:1.2rem;color:var(--sand);margin-left:4px}
+.win p{margin-top:.6rem;font-size:.9rem;color:rgba(246,241,234,.72)}
+.win span{display:block;margin-top:.8rem;font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sand)}
+
+.part2{padding:80px 0;border-bottom:1px solid var(--line)}
+.part2.alt{background:var(--paper)}
+.part2 .head{display:grid;grid-template-columns:120px 1fr;gap:24px;align-items:start}
+@media (max-width:700px){.part2 .head{grid-template-columns:1fr;gap:6px}}
+.part2 .num{font-family:'Cormorant Garamond',serif;font-size:5rem;line-height:.9;color:var(--sand-deep);opacity:.55}
+.part2 h2{margin-top:.3rem}
+.part2 .lead{margin-top:.9rem;color:var(--mute);font-size:1.03rem;max-width:64ch}
+
+.tv{margin-top:2rem;border-top:1px solid var(--line)}
+.tv .row{display:grid;grid-template-columns:1fr 1fr 1.25fr;gap:24px;padding:20px 0;border-bottom:1px solid var(--line);align-items:start;transition:background .4s var(--ease),padding-left .4s var(--ease)}
+.tv .row:hover{background:rgba(217,198,176,.14);padding-left:12px}
+.tv .row.hd{padding:10px 0;font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:var(--mute)}
+.tv .row.hd:hover{background:none;padding-left:0}
+.tv .row b{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:1.3rem;color:var(--bink);line-height:1.2;display:block}
+.tv .today{font-size:.92rem;color:var(--mute)}
+.tv .build{font-size:.95rem;color:var(--bink);display:flex;gap:10px}
+.tv .build::before{content:"";flex:0 0 18px;height:18px;margin-top:2px;border-radius:50%;background:var(--bink) url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M5 12.5l4.2 4.2L19 7' fill='none' stroke='%23f6f1ea' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/></svg>") center/12px no-repeat}
+@media (max-width:760px){.tv .row{grid-template-columns:1fr;gap:6px}.tv .row.hd{display:none}.tv .today::before{content:"Today: ";color:var(--sand-deep);font-weight:500}}
+
+.speed{margin-top:2rem;display:grid;grid-template-columns:1fr 1fr;gap:22px}
+@media (max-width:760px){.speed{grid-template-columns:1fr}}
+.meter{border:1px solid var(--line);padding:24px;background:var(--cream)}
+.meter .lbl{font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--mute)}
+.meter .val{font-family:'Cormorant Garamond',serif;font-size:2.6rem;line-height:1;margin-top:.4rem;color:var(--bink)}
+.bar{position:relative;height:10px;background:rgba(31,26,23,.08);margin-top:1rem;overflow:visible}
+.bar i{position:absolute;left:0;top:0;bottom:0;width:0;background:var(--sand-deep);transition:width 1.6s var(--ease)}
+.bar.good i{background:#6d9b7b}
+.meter.in .bar i{width:var(--w)}
+.bar .mark{position:absolute;top:-6px;bottom:-6px;width:2px;background:var(--bink);left:var(--m)}
+.bar .mark::after{content:attr(data-l);position:absolute;top:22px;left:50%;transform:translateX(-50%);white-space:nowrap;font-size:.56rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.meter p{margin-top:2.2rem;font-size:.86rem;color:var(--mute)}
+
+.firstweek{background:var(--burg);color:var(--cream);position:relative;overflow:hidden}
+.firstweek::before{content:"";position:absolute;width:520px;height:520px;left:-160px;bottom:-240px;border-radius:50%;background:var(--blue);filter:blur(130px);opacity:.16;animation:breathe 9s ease-in-out infinite}
+.firstweek .wrap{position:relative;padding-top:80px;padding-bottom:80px}
+.firstweek .eyebrow{color:var(--blue)}
+.firstweek h2{color:var(--cream);margin-top:.6rem}
+.firstweek h2 em{font-style:italic;color:var(--blue)}
+.firstweek .lead{margin-top:1rem;color:rgba(246,241,234,.84);max-width:64ch}
+.steps4{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:2.2rem;border:1px solid rgba(202,217,253,.3)}
+@media (max-width:900px){.steps4{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.steps4{grid-template-columns:1fr}}
+.steps4 div{padding:24px 20px;border-right:1px solid rgba(202,217,253,.2);border-bottom:1px solid rgba(202,217,253,.2)}
+.steps4 i{display:block;font-style:normal;font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:var(--blue)}
+.steps4 b{display:block;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:1.35rem;margin-top:.4rem;line-height:1.15}
+.steps4 p{margin-top:.5rem;font-size:.88rem;color:rgba(246,241,234,.75)}
+
+.pclose{padding:80px 0}
+.pclose .lead{margin-top:1rem;color:var(--mute);max-width:62ch}
+</style>
 </head>
-<body class="bk">
+<body class="bk pl">
 <script>
 /* open every page at the top: stop the browser restoring the last scroll position on refresh or Back */
 (function(){
@@ -454,256 +529,183 @@ header{animation-delay:.1s}
 <div class="house">
   <div class="wrap">
     <span>One clinic, two doors</span>
-    <a class="on" href="index.html">Browskii <small>brows, lashes, cosmetic tattoo</small></a>
+    <a href="index.html">Browskii <small>brows, lashes, cosmetic tattoo</small></a>
     <a class="momo" href="momo.html">MOMO by Browskii <small>skin, cosmetic medicine</small></a>
   </div>
 </div>
 
 <header>
   <div class="wrap nav">
-    <a class="brand" href="index.html"><span><b>BROWSKII</b><small>Newstead &middot; Brisbane</small></span></a>
-    <nav class="links"><a href="#tattoo">Cosmetic tattoo</a><a href="#brows">Brows and lashes</a><a href="momo.html">Skin at MOMO</a><a href="browskii-gallery.html">Gallery</a><a href="#visit">Visit</a></nav>
-    <a class="btn solid" href="https://www.browskii.com.au/bookings">Book</a>
+    <a class="brand" href="index.html"><span><b>BROWSKII</b><small>The website plan</small></span></a>
+    <nav class="links"><a href="#data">Data</a><a href="#pages">Pages</a><a href="#ai">AI search</a><a href="#speed">Speed</a><a href="structure.html">Two doors</a></nav>
+    <a class="btn solid" href="index.html">See the site</a>
   </div>
 </header>
 
-<section class="vhero" id="top">
-  <video autoplay muted loop playsinline poster="assets/browskii/hero-poster.jpg" aria-hidden="true">
-    <source src="assets/browskii/hero.mp4" type="video/mp4">
-  </video>
-  <div class="veil"></div>
+<section class="phero">
   <div class="wrap">
-    <div class="copy">
-      <div class="eyebrow fade d1">Cosmetic tattoo &middot; brows &middot; lashes &middot; Newstead</div>
-      <h1 style="margin-top:1rem">
-        <span class="hl"><span>Brisbane's original</span></span>
-        <span class="hl"><span>cosmetic tattoo</span></span>
-        <span class="hl"><span><em>clinic.</em></span></span>
-      </h1>
-      <p class="lead fade d2">Feather touch, ombre, nano brows, eyeliner and lip blush by artists who do this all day, every day. Brows and lashes too. And when it is your skin you want looked at, MOMO is through the same door, with a nurse whose whole job is skin.</p>
-      <div class="btns fade d3"><a class="btn solid" href="https://www.browskii.com.au/bookings">Book at Browskii</a><a class="btn" href="#tattoo">See the cosmetic tattoo menu</a></div>
-      <p class="alt fade d4">Here for redness, rosacea or your skin? <a href="momo.html">Go to MOMO</a></p>
+    <div class="eyebrow fade d1">For Ashleigh &middot; the website plan</div>
+    <h1 style="margin-top:1rem"><span class="hl"><span>A website that</span></span><span class="hl"><span><em>works for you.</em></span></span></h1>
+    <p class="lead fade d2">A beautiful site pays for itself when Google can read it, AI search can quote it, and every enquiry is traced back to the page and the ad it came from. This is what comes with the rebuild, before a single ad runs. Every number here comes from browskii.com.au as it stands today.</p>
+    <div class="src fade d3">Site checked 11 September 2026 &middot; 21 live pages</div>
+  </div>
+</section>
+
+<section class="wins">
+  <div class="wrap">
+    <div class="eyebrow rv">Quick wins already sitting in your site</div>
+    <h2 class="rv" style="--d:.1s">Four fixes that move search first.</h2>
+    <div class="grid">
+      <div class="win rv" style="--d:.05s"><b data-count="16">0</b><p>of your 21 pages have no main heading for Google to read what the page is about.</p><span>Fixed in the rebuild</span></div>
+      <div class="win rv" style="--d:.15s"><b data-count="13" data-dec="0">0</b><b style="display:inline;font-size:1.6rem;color:var(--sand)">seconds</b><p>for the home page's main image to show on a phone in a standard speed test.</p><span>Rebuilt to load fast</span></div>
+      <div class="win rv" style="--d:.25s"><b data-count="0">0</b><p>business details Google and AI search can read. Your name, address, phone and hours block exists but is empty.</p><span>Filled in on every page</span></div>
+      <div class="win rv" style="--d:.35s"><b data-count="6">0</b><p>MOMO treatments share one page, and redness and rosacea has no page of its own to be found for.</p><span>A page per concern</span></div>
     </div>
-    <div class="side">
-      <div class="stats fade d3">
-        <div><b data-count="4.9" data-dec="1">0.0</b>Google rating</div>
-        <div><b data-count="168">0</b>Reviews</div>
-        <div><b data-count="13" data-suffix="K">0</b>Following</div>
+  </div>
+</section>
+
+<section class="part2" id="data">
+  <div class="wrap">
+    <div class="head">
+      <div class="num rv">01</div>
+      <div>
+        <div class="eyebrow rv">The data back end</div>
+        <h2 class="rv" style="--d:.1s">Every enquiry traced to where it came from.</h2>
+        <p class="lead rv" style="--d:.2s">Without this, a new website is a pretty brochure. With it, you can see which page, post and ad brought in each brow client and each MOMO consult, and put your money where it works.</p>
       </div>
-      <a class="stamp fade d4" href="momo.html"><img src="assets/momo/logo.png" alt=""><span><b>MOMO by Browskii</b>Skin, same door</span><span class="dot"></span></a>
     </div>
-  </div>
-  <div class="cue"></div>
-</section>
-
-<div class="ticker" aria-hidden="true">
-  <div class="track">
-    <span>Feather touch brows<i>&#9670;</i></span><span>Ombre brows<i>&#9670;</i></span><span>Nano brows<i>&#9670;</i></span><span>Lip blush<i>&#9670;</i></span><span>Lash enhancement liner<i>&#9670;</i></span><span>Hybrid brows<i>&#9670;</i></span><span>Lash lift and tint<i>&#9670;</i></span><span>Brow lamination<i>&#9670;</i></span><span class="m">Skin at MOMO<i>&#9670;</i></span><span class="m">Redness and rosacea<i>&#9670;</i></span>
-    <span>Feather touch brows<i>&#9670;</i></span><span>Ombre brows<i>&#9670;</i></span><span>Nano brows<i>&#9670;</i></span><span>Lip blush<i>&#9670;</i></span><span>Lash enhancement liner<i>&#9670;</i></span><span>Hybrid brows<i>&#9670;</i></span><span>Lash lift and tint<i>&#9670;</i></span><span>Brow lamination<i>&#9670;</i></span><span class="m">Skin at MOMO<i>&#9670;</i></span><span class="m">Redness and rosacea<i>&#9670;</i></span>
-  </div>
-</div>
-
-<section class="doors" id="doors">
-  <div class="wrap">
-    <div class="eyebrow rv">One clinic, two doors</div>
-    <h2 class="rv" style="margin-top:.8rem;--d:.1s">One address, and a familiar face every time you come in.</h2>
-    <div class="rv-line" style="margin-top:1.4rem;--d:.3s"></div>
-    <div class="grid">
-      <a class="door b rv" href="#tattoo" style="--d:.15s">
-        <span class="num">01</span>
-        <div class="mark">Browskii</div>
-        <h3>Brows, lashes and cosmetic tattoo.</h3>
-        <ul>
-          <li>Feather touch, ombre, combination and nano brows</li>
-          <li>Lash enhancement and baby wing eyeliner</li>
-          <li>Lip blush</li>
-          <li>Brow wax, tint, henna, hybrid and lamination</li>
-          <li>Lash lift and tint</li>
-        </ul>
-        <div class="go">See the menus <span>&rarr;</span></div>
-      </a>
-      <a class="door m rv" href="momo.html" style="--d:.3s">
-        <span class="num">02</span>
-        <div class="mark"><img src="assets/momo/logo.png" alt="">MOMO by Browskii</div>
-        <h3>Skin and cosmetic medicine, <em>led by a nurse.</em></h3>
-        <ul>
-          <li>Redness and rosacea</li>
-          <li>Pigmentation and sun damage</li>
-          <li>Acne, texture and scarring</li>
-          <li>Skin needling, light-based treatments, skin boosters</li>
-          <li>Cosmetic medicine, by consultation</li>
-        </ul>
-        <div class="go">Go to MOMO <span>&rarr;</span></div>
-      </a>
-    </div>
-    <p class="rule rv" style="--d:.2s">Your brow artist gets to know your brows, your face and how you like them, and you book with them visit after visit. When you want your skin looked at, they introduce you to the MOMO team, and that becomes your person for skin.</p>
-  </div>
-</section>
-
-<section class="menu" id="tattoo">
-  <div class="wrap">
-    <div class="pic rv-img" data-parallax><img src="assets/browskii/smile.jpg" alt="A Browskii client with finished cosmetic tattoo brows"></div>
-    <div>
-      <div class="eyebrow rv">Cosmetic tattoo</div>
-      <h2 class="rv" style="margin-top:.8rem;--d:.1s">Where Browskii started.</h2>
-      <p class="lead rv" style="--d:.2s">Every cosmetic tattoo appointment except eyeliner includes a complimentary follow-up within 6 to 10 weeks. Not sure which brow to book? Book the ombre appointment. It has the longer time slot, so there is room to decide on the day.</p>
-      <ul class="plist">
-        <li class="rv" style="--d:.05s"><div><b>Consultation</b><span>A full skin and brow assessment with a recommendation for you. Redeemable against a same-day booking if there is space.</span></div><i>$50</i></li>
-        <li class="rv" style="--d:.1s"><div><b>Feather touch brows</b><span>Fine strokes that mimic brow hairs. Normal to dry skin with a moderate amount of brow hair. Follow-up included.</span></div><i>$995</i></li>
-        <li class="rv" style="--d:.15s"><div><b>Ombre brows</b><span>A soft mist of colour, light and dusty or defined and bold. Suits all skin and hair types.</span></div><i>$995</i></li>
-        <li class="rv" style="--d:.2s"><div><b>Combination brows</b><span>Hair strokes with a fine mist of colour through them. Suits most skin types.</span></div><i>$995</i></li>
-        <li class="rv" style="--d:.25s"><div><b>Nano brows</b><span>Machine hair strokes, ultra gentle, for skin that could not hold bladed strokes before. Touch-up if needed, $250 within 10 weeks.</span></div><i>$850</i></li>
-        <li class="rv" style="--d:.3s"><div><b>Lash enhancement liner</b><span>The look of a tight-lined lash line, fuller, with soft definition. Touch-up $150.</span></div><i>$550</i></li>
-        <li class="rv" style="--d:.35s"><div><b>Baby wing liner</b><span>The tight liner with a small flick at the end. Touch-up $150.</span></div><i>$650</i></li>
-        <li class="rv" style="--d:.4s"><div><b>Lip blush</b><span>A fine mist of pigment to bring back colour, shape and fullness. A natural finish with a hint of colour.</span></div><i>$950</i></li>
-        <li class="rv" style="--d:.45s"><div><b>Brow refresh</b><span>For returning Browskii cosmetic tattoo clients. 6 to 12 months $350, 13 to 18 months $450, after 18 months a full appointment.</span></div><i>from $350</i></li>
-      </ul>
-      <div class="btns rv"><a class="btn solid" href="https://www.browskii.com.au/bookings">Book cosmetic tattoo</a><a class="btn" href="browskii-gallery.html">See the gallery</a></div>
-      <p class="fine rv">Booking fees are explained before you confirm and are non-refundable. Late arrivals cannot be accommodated, so please allow time for traffic and parking. Cosmetic tattoo happens in a private room.</p>
+    <div class="tv">
+      <div class="row hd"><div>What</div><div>Today</div><div>In the rebuild</div></div>
+      <div class="row rv"><div><b>Google tracking</b></div><div class="today">Your Meta pixel is on the site. No Google Analytics or Tag Manager was found on the home page.</div><div class="build">Google Analytics 4 and Tag Manager installed and firing on every page, beside the Meta pixel.</div></div>
+      <div class="row rv"><div><b>Search Console</b></div><div class="today">No access on file yet.</div><div class="build">Verified, with the sitemap submitted, so Google recrawls every new page and reports which searches find you.</div></div>
+      <div class="row rv"><div><b>Conversions</b></div><div class="today">Bookings go straight to Acuity, with no Google tracking to show which page or ad led to each one.</div><div class="build">Booking, skin assessment, chat, call tap and email tap all counted as conversions, with Browskii and MOMO counted separately.</div></div>
+      <div class="row rv"><div><b>One client list</b></div><div class="today">No CRM, so enquiries that do not book have no list to be followed up from.</div><div class="build">Every form, chat and assessment lands in your own GHL, tagged by brand, service and source, ready for follow-up.</div></div>
+      <div class="row rv"><div><b>Your numbers</b></div><div class="today">Not in one place.</div><div class="build">Enquiries and bookings by page and by brand, so MOMO's line of numbers stands on its own.</div></div>
     </div>
   </div>
 </section>
 
-<section class="menu alt-bg" id="brows">
+<section class="part2 alt" id="pages">
   <div class="wrap">
-    <div class="pic rv-img" data-parallax><img src="assets/browskii/lashes.jpg" alt="A lash lift and tint at Browskii"></div>
-    <div>
-      <div class="eyebrow rv">Brows and lashes</div>
-      <h2 class="rv" style="margin-top:.8rem;--d:.1s">The appointment you keep every five weeks.</h2>
-      <p class="lead rv" style="--d:.2s">Return within five weeks and the lower price applies. A precision tweezing option is available if wax does not agree with your skin, just tell your artist.</p>
-      <ul class="plist">
-        <li class="rv" style="--d:.05s"><div><b>Brow wax and tint</b><span>A tint blended for you, shaped to your face.</span></div><i>$75 / $60</i></li>
-        <li class="rv" style="--d:.1s"><div><b>Brow wax and henna tint</b><span>Stains the skin for up to two weeks and the hair for five. Definition where the hair is sparse.</span></div><i>$80 / $70</i></li>
-        <li class="rv" style="--d:.15s"><div><b>Hybrid brows</b><span>The client favourite. Tint and henna together, defined or soft.</span></div><i>$95 / $80</i></li>
-        <li class="rv" style="--d:.2s"><div><b>Brow lamination</b><span>Unruly brows set smooth and brushed up. Includes wax and tint.</span></div><i>$140</i></li>
-        <li class="rv" style="--d:.25s"><div><b>Lash lift and tint</b><span>Length, thickness and lift on your own lashes. Pregnancy-safe and sensitive formula $155. Korean lash lift $155.</span></div><i>$140</i></li>
-        <li class="rv" style="--d:.3s"><div><b>Express and extras</b><span>Brow tint express $35, tint with stain $55, sculpt only $60, brow lightening $75, men's brow tidy $40 to $50, lash tint $35.</span></div><i>from $35</i></li>
-      </ul>
-      <div class="btns rv"><a class="btn solid" href="https://www.browskii.com.au/bookings">Book brows or lashes</a></div>
-      <p class="fine rv">Please stop any prescription skincare, steroid or vitamin A products at least one week before a brow or lash appointment.</p>
-    </div>
-  </div>
-</section>
-
-<section class="work" id="work">
-  <div class="wrap">
-    <div class="eyebrow rv">Recent work</div>
-    <h2 class="rv" style="margin-top:.8rem;--d:.1s">Straight from the clinic Instagram.</h2>
-    <div class="grid">
-      <a class="rv-img" style="--d:.05s" data-video="assets/browskii/clips/brow-ba.mp4" href="https://www.instagram.com/p/DWk_7f4GWqD/" target="_blank" rel="noopener"><img src="assets/momo/social/brow-ba.jpg" alt="Brows before and after at Browskii"><i class="pr"></i><span>Brows</span></a>
-      <a class="rv-img" style="--d:.12s" href="https://www.instagram.com/reel/Dbm3pNgB259/" target="_blank" rel="noopener"><img src="assets/momo/social/brow-reveal-reel.jpg" alt="A brow reveal reel from Browskii"><i class="pr"></i><span>Reveal</span></a>
-      <a class="rv-img" style="--d:.19s" href="https://www.instagram.com/browskii.au/" target="_blank" rel="noopener"><img src="assets/momo/social/lipblush-ba.jpg" alt="Lip blush at Browskii"><span>Lip blush</span></a>
-      <a class="rv-img" style="--d:.26s" href="https://www.instagram.com/browskii.au/" target="_blank" rel="noopener"><img src="assets/browskii/lashes.jpg" alt="Lash lift and tint at Browskii"><span>Lashes</span></a>
-      <a class="rv-img" style="--d:.33s" href="https://www.instagram.com/browskii.au/" target="_blank" rel="noopener"><img src="assets/browskii/brow-sculpt.jpg" alt="Brow sculpt and lash lift at Browskii"><span>Sculpt and lift</span></a>
-      <a class="rv-img" style="--d:.4s" href="https://www.instagram.com/browskii.au/" target="_blank" rel="noopener"><img src="assets/browskii/brows-filled.jpg" alt="Filled-in brows without makeup at Browskii"><span>Nano brows</span></a>
-    </div>
-    <p class="alt dark rv" style="margin-top:1.2rem"><a href="browskii-gallery.html">See the full gallery</a>. Thirteen thousand people follow along at <a href="https://www.instagram.com/browskii.au/" target="_blank" rel="noopener">@browskii.au</a>. The skin side lives at <a href="https://www.instagram.com/momo_by_browskii.au/" target="_blank" rel="noopener">@momo_by_browskii.au</a>.</p>
-  </div>
-</section>
-
-<section class="mband" id="momo">
-  <div class="wrap">
-    <div>
-      <div class="mark rv"><img src="assets/momo/logo.png" alt="">MOMO by Browskii</div>
-      <h2 class="rv" style="margin-top:1rem;--d:.1s">Your skin has <em>its own door.</em></h2>
-      <div class="rv-line" style="margin-top:1.2rem;--d:.25s"></div>
-      <p class="lead rv" style="--d:.2s">Tried everything and your skin is still red? MOMO is the skin clinic Browskii grew, with its own name, its own room and a Registered Nurse who chose skin over injecting and has a special interest in rosacea. Redness, pigmentation, texture and acne, and cosmetic medicine by consultation. The first appointment is a look at your skin. Any treatment comes after that.</p>
-      <p class="lead rv" style="margin-top:.9rem;--d:.3s">The clients Ashleigh talks about most are the ones who were given a prescription for rosacea, did not want to stay on it, and still got to calm skin.</p>
-      <div class="btns rv" style="--d:.4s"><a class="btn blue" href="assessment.html">Start with the 60-second skin assessment</a><a class="btn ghost-light" href="momo.html">Go to MOMO</a></div>
-      <p class="alt rv" style="--d:.5s">Already a Browskii client? <a href="https://www.browskii.com.au/bookings">Book your skin appointment</a></p>
-    </div>
-    <div class="rv-img" style="--d:.15s"><img src="assets/momo/hero-poster.jpg" alt="A light-based skin treatment at MOMO"></div>
-  </div>
-</section>
-
-<section class="rev" id="reviews">
-  <div class="wrap">
-    <div class="score rv"><b data-count="4.9" data-dec="1">0.0</b><span>Google rating across <b style="font-size:1rem;display:inline" data-count="168">0</b> reviews <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span></div>
-    <div class="grid">
-      <blockquote class="rv" style="--d:.1s">"I won't go anywhere else for my botox and brows. The girls are all so professional and lovely."<cite>Google review</cite></blockquote>
-      <blockquote class="rv" style="--d:.2s">"Teddy always looks after me and her brows are absolutely amazing."<cite>Google review</cite></blockquote>
-      <blockquote class="rv" style="--d:.3s">"Thank you Teddy for always making my brows and lashes look AMAZING. I always get compliments."<cite>Google review</cite></blockquote>
-    </div>
-  </div>
-</section>
-
-<section class="visit" id="visit">
-  <div class="wrap">
-    <div class="rv-img"><img src="assets/browskii/clinic.jpg" alt="Inside the Browskii clinic in Newstead"></div>
-    <div>
-      <div class="eyebrow rv">Visit</div>
-      <h2 class="rv" style="margin-top:.8rem;--d:.1s">27 Wyandra Street, Newstead.</h2>
-      <div class="rv-line" style="margin-top:1.2rem;--d:.25s"></div>
-      <p class="lead rv" style="margin-top:1rem;color:var(--mute);--d:.2s">Browskii and MOMO share the building. Book either side online, or call and the team will point you to the right room.</p>
-      <div class="addr rv" style="--d:.3s">
-        <a href="https://www.browskii.com.au/bookings">Book online</a><br>
-        <a href="tel:+61417322366">0417 322 366</a><br>
-        <a href="mailto:hello@browskii.com.au">hello@browskii.com.au</a><br>
-        <a href="https://www.instagram.com/browskii.au/" target="_blank" rel="noopener">@browskii.au</a> &middot; <a href="https://www.instagram.com/momo_by_browskii.au/" target="_blank" rel="noopener">@momo_by_browskii.au</a>
+    <div class="head">
+      <div class="num rv">02</div>
+      <div>
+        <div class="eyebrow rv">Pages Google can read</div>
+        <h2 class="rv" style="--d:.1s">Written for what people type into Google.</h2>
+        <p class="lead rv" style="--d:.2s">Each page gets one job, one clear heading with the service and the suburb, and a description written for the search result. Everything Browskii already ranks for is carried across, so nothing you have built up is lost in the move.</p>
       </div>
-      <p class="fine rv" style="--d:.4s">Cancellations need to be phoned through, not texted or messaged. Booking fees are non-refundable. For everyone's comfort, children cannot come into the clinic.</p>
     </div>
+    <div class="tv">
+      <div class="row hd"><div>What</div><div>Today</div><div>In the rebuild</div></div>
+      <div class="row rv"><div><b>Home page</b></div><div class="today">The page title reads "BROWSKII", the main heading is "Product of the week", and there are 64 words of text.</div><div class="build">A title and heading that say cosmetic tattoo, brows and skin in Newstead, Brisbane, with both doors on the page.</div></div>
+      <div class="row rv"><div><b>Headings</b></div><div class="today">16 of 21 pages have no main heading, including cosmetic tattoo, IPL and skin needling.</div><div class="build">One main heading on every page, with the service and Newstead or Brisbane in it.</div></div>
+      <div class="row rv"><div><b>Search descriptions</b></div><div class="today">8 pages have none. The home page description still lists injectables and Morpheus8.</div><div class="build">A description on every page, matched to the treatments you offer now and checked against the advertising rules.</div></div>
+      <div class="row rv"><div><b>A page per service</b></div><div class="today">Brow techniques, lip blush and eyeliner share one page. MOMO's cosmetic medicine shares one 2,230-word page.</div><div class="build">Browskii pages for nano, ombre and feather touch brows, lip blush, eyeliner tattoo, lamination and lash lift. MOMO pages for redness and rosacea, pigmentation, acne and texture, IPL and skin needling.</div></div>
+      <div class="row rv"><div><b>Nothing lost in the move</b></div><div class="today">4 internal links point to pages that no longer exist, and old pages such as a Black Friday offer are still live.</div><div class="build">Every old address redirected to its new page, so Google carries your history across. Retired pages removed.</div></div>
+      <div class="row rv"><div><b>Linked both ways</b></div><div class="today">MOMO has no section of its own on the site.</div><div class="build">MOMO in its own section, linked from every Browskii page and back again, so a brow client can still find skin.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="part2" id="ai">
+  <div class="wrap">
+    <div class="head">
+      <div class="num rv">03</div>
+      <div>
+        <div class="eyebrow rv">Found in AI search</div>
+        <h2 class="rv" style="--d:.1s">Ready for "where do I go for rosacea in Brisbane".</h2>
+        <p class="lead rv" style="--d:.2s">ChatGPT, Claude and Google's AI answers read the hidden details on a page. When those details are complete, they have what they need to name your clinic. Your site already lets AI crawlers in, so this part is about giving them something to read.</p>
+      </div>
+    </div>
+    <div class="tv">
+      <div class="row hd"><div>What</div><div>Today</div><div>In the rebuild</div></div>
+      <div class="row rv"><div><b>Business details</b></div><div class="today">The local business block on every page is empty: no name, address, phone, map location or hours.</div><div class="build">Complete details on every page, matched letter for letter to your Google Business Profile.</div></div>
+      <div class="row rv"><div><b>Questions and answers</b></div><div class="today">6 pages have FAQ text, with nothing marking it as questions and answers.</div><div class="build">FAQ markup on every question, plus new ones for redness, rosacea and first appointments at MOMO.</div></div>
+      <div class="row rv"><div><b>llms.txt</b></div><div class="today">Not on the site. 4 of the 9 nearby clinic sites we checked have one.</div><div class="build">A plain-language guide file that tells AI tools who you are, what you offer and where you are.</div></div>
+      <div class="row rv"><div><b>Your team</b></div><div class="today">One 133-word page for three people.</div><div class="build">A page for each practitioner with their qualifications, written with the AHPRA-safe wording "has a special interest in".</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="part2 alt" id="speed">
+  <div class="wrap">
+    <div class="head">
+      <div class="num rv">04</div>
+      <div>
+        <div class="eyebrow rv">Speed and wording</div>
+        <h2 class="rv" style="--d:.1s">Fast on a phone, safe under the advertising rules.</h2>
+        <p class="lead rv" style="--d:.2s">Google ranks fast pages higher, and most of your clients are on their phones. Google's own standard for a good page is the main image showing within 2.5 seconds.</p>
+      </div>
+    </div>
+    <div class="speed">
+      <div class="meter rv" style="--d:.1s">
+        <div class="lbl">Home page, main image on a phone</div>
+        <div class="val">13.0 seconds</div>
+        <div class="bar"><i style="--w:100%"></i><span class="mark" style="--m:19%" data-l="Google's good: 2.5s"></span></div>
+        <p>Speed test run on 11 September. Most of the home page weight is platform scripts. Across the site, 9 images are over 500 KB, the largest 3.5 MB.</p>
+      </div>
+      <div class="meter rv" style="--d:.2s">
+        <div class="lbl">The rebuild</div>
+        <div class="val">Target: 2.5 seconds</div>
+        <div class="bar good"><i style="--w:19%"></i><span class="mark" style="--m:19%" data-l="Google's good: 2.5s"></span></div>
+        <p>Images sized for phones, only the scripts a page needs, and a speed check on every page before it goes live.</p>
+      </div>
+    </div>
+    <div class="tv" style="margin-top:2.4rem">
+      <div class="row rv"><div><b>Advertising rules</b></div><div class="today">"Specialist" is in the menu on every page, and appears 19 times across the cosmetic tattoo, brows and skin pages.</div><div class="build">Every page written with AHPRA-safe wording and checked against the cosmetic advertising rules before it goes live.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="firstweek">
+  <div class="wrap">
+    <div class="eyebrow rv">How the build starts</div>
+    <h2 class="rv" style="--d:.1s">The research comes <em>before</em> the design.</h2>
+    <p class="lead rv" style="--d:.2s">The page names, headings and descriptions are worked out from real search data first, so the site is built around what your clients search for.</p>
+    <div class="steps4">
+      <div class="rv" style="--d:.05s"><i>Step one</i><b>Keyword research</b><p>Brisbane search volumes for every brow, lip and skin service, and where Browskii and nearby clinics rank today.</p></div>
+      <div class="rv" style="--d:.15s"><i>Step two</i><b>The page map</b><p>Every page, its heading and its search description, plus the redirect for every old address.</p></div>
+      <div class="rv" style="--d:.25s"><i>Step three</i><b>Tracking first</b><p>Analytics, Search Console, conversions and the client list switched on before launch.</p></div>
+      <div class="rv" style="--d:.35s"><i>Step four</i><b>Launch and re-check</b><p>Resubmitted to Google, then rankings and enquiries checked again at 30 days.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="pclose">
+  <div class="wrap">
+    <div class="eyebrow rv">Built inside your own system</div>
+    <h2 class="rv" style="margin-top:.6rem;--d:.1s">You own it, and you can see it working.</h2>
+    <p class="lead rv" style="--d:.2s">The site is built inside your own GHL, so the website, the chat, the client list and the tracking are one system. You own every page and every number, and the workshop shows you how to read them and keep improving them yourself.</p>
+    <div class="btns rv" style="--d:.3s"><a class="btn solid" href="structure.html">How the two doors fit online</a><a class="btn" href="index.html">See the Browskii mockup</a></div>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <span>&copy; 2026 Browskii &middot; MOMO by Browskii &middot; 27 Wyandra Street, Newstead &middot; 0417 322 366</span>
-    <span>Concept by Clinic Catalyst &middot; photos from browskii.com.au and the clinic Instagram &middot; hero clip: Pexels, free licence, placeholder until Browskii's own footage &middot; prices as published on browskii.com.au</span>
+    <span>&copy; 2026 Browskii &middot; MOMO by Browskii</span>
+    <span>Prepared by Clinic Catalyst for Ashleigh Hou &middot; findings from browskii.com.au, 11 Sep 2026 &middot; speed from a Lighthouse mobile test</span>
   </div>
 </footer>
-<a class="cc" href="structure.html">How the two doors fit online &rarr;</a>
 
 <script>
 (function(){
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  // scroll reveals
-  var els = document.querySelectorAll('.rv, .rv-img, .rv-line');
-  if (reduce || !('IntersectionObserver' in window)) { els.forEach(function(e){ e.classList.add('in'); }); }
+  var els = document.querySelectorAll('.rv, .rv-img, .rv-line, .meter');
+  if (reduce || !('IntersectionObserver' in window)) els.forEach(function(e){ e.classList.add('in'); });
   else {
-    var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(en){ if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
-    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+    var io = new IntersectionObserver(function(en){ en.forEach(function(x){ if (x.isIntersecting){ x.target.classList.add('in'); io.unobserve(x.target); } }); }, { rootMargin:'0px 0px -8% 0px', threshold:.12 });
     els.forEach(function(e){ io.observe(e); });
   }
-  // count-up
   function countUp(el){
-    var target = parseFloat(el.getAttribute('data-count')), dec = parseInt(el.getAttribute('data-dec')||'0',10), suf = el.getAttribute('data-suffix')||'';
-    if (reduce) { el.textContent = target.toFixed(dec)+suf; return; }
-    var start = null, dur = 1400;
-    function step(ts){ if(!start) start = ts; var p = Math.min(1,(ts-start)/dur); p = 1-Math.pow(1-p,3); el.textContent = (target*p).toFixed(dec)+suf; if (p<1) requestAnimationFrame(step); }
+    var target=parseFloat(el.dataset.count), dec=parseInt(el.dataset.dec||'0',10);
+    if (reduce){ el.textContent=target.toFixed(dec); return; }
+    var s=null; function step(ts){ if(!s) s=ts; var p=Math.min(1,(ts-s)/1300); p=1-Math.pow(1-p,3); el.textContent=(target*p).toFixed(dec); if(p<1) requestAnimationFrame(step); }
     requestAnimationFrame(step);
   }
-  var counters = document.querySelectorAll('[data-count]');
-  if ('IntersectionObserver' in window) {
-    var cio = new IntersectionObserver(function(entries){ entries.forEach(function(en){ if(en.isIntersecting){ countUp(en.target); cio.unobserve(en.target);} }); }, { threshold: 0.5 });
-    counters.forEach(function(c){ cio.observe(c); });
-  } else { counters.forEach(countUp); }
-
-  /* hover-to-play Instagram clips (plays in view on touch screens) */
-  var hoverable = window.matchMedia('(hover: hover)').matches;
-  document.querySelectorAll('[data-video]').forEach(function(t){
-    var v=document.createElement('video'); v.muted=true; v.loop=true; v.playsInline=true; v.preload='none';
-    v.setAttribute('muted',''); v.setAttribute('playsinline',''); v.src=t.dataset.video;
-    var img=t.querySelector('img'); img.insertAdjacentElement('afterend', v);
-    function play(){ if(reduce) return; v.preload='auto'; var p=v.play(); if(p&&p.then) p.then(function(){ t.classList.add('playing'); }).catch(function(){}); }
-    function stop(){ v.pause(); t.classList.remove('playing'); }
-    if (hoverable){ t.addEventListener('mouseenter', play); t.addEventListener('mouseleave', stop); }
-    else if ('IntersectionObserver' in window){ new IntersectionObserver(function(en){ en.forEach(function(x){ if(x.intersectionRatio>.6) play(); else stop(); }); },{threshold:[0,.6,1]}).observe(t); }
-  });
-  // header compact + parallax
-  var pics = document.querySelectorAll('[data-parallax] img');
-  function onScroll(){
-    document.body.classList.toggle('scrolled', window.scrollY > 80);
-    if (reduce || window.innerWidth < 820) return;
-    var vh = window.innerHeight;
-    pics.forEach(function(img){
-      var r = img.parentElement.getBoundingClientRect();
-      var t = (r.top + r.height/2 - vh/2) / vh;   // -1..1 as it crosses the viewport
-      img.style.transform = 'translateY(' + (t * -26) + 'px) scale(1.08)';
-    });
-  }
-  window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+  var cs=document.querySelectorAll('[data-count]');
+  if ('IntersectionObserver' in window){ var ci=new IntersectionObserver(function(en){ en.forEach(function(x){ if(x.isIntersecting){ countUp(x.target); ci.unobserve(x.target); } }); },{threshold:.6}); cs.forEach(function(c){ ci.observe(c); }); }
+  else cs.forEach(countUp);
+  window.addEventListener('scroll', function(){ document.body.classList.toggle('scrolled', window.scrollY>80); }, { passive:true });
 })();
 </script>
 

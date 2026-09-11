@@ -238,6 +238,20 @@ body.locked{overflow:hidden}
 </style>
 </head>
 <body class="locked">
+<script>
+/* open every page at the top: stop the browser restoring the last scroll position on refresh or Back */
+(function(){
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  function toTop(){
+    if (location.hash) return;
+    var r = document.documentElement, prev = r.style.scrollBehavior;
+    r.style.scrollBehavior = 'auto'; window.scrollTo(0, 0); r.style.scrollBehavior = prev;
+  }
+  toTop();
+  window.addEventListener('load', toTop);
+  window.addEventListener('pageshow', function(e){ if (e.persisted) toTop(); });
+})();
+</script>
 
 <div class="gate" id="gate">
   <div class="inner">
@@ -423,7 +437,7 @@ body.locked{overflow:hidden}
   <a class="btn solid" href="https://www.browskii.com.au/bookings">Book a brow or lip appointment</a>
   <a class="btn" href="assessment.html">Start with the skin assessment</a>
   </div>
-  <p class="alt dark" style="margin-top:.9rem">Brows and lips you can book straight in. New to skin? Start with the assessment.</p></div>
+  <p class="alt dark" style="margin-top:.9rem">Brows and lips you can book straight in. <a href="browskii-gallery.html">See the full Browskii gallery</a>. New to skin? Start with the assessment.</p></div>
 </div></div>
 </div>
 <div class="pane" id="cosmetic-medicine">
