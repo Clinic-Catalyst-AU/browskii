@@ -167,14 +167,38 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 #peek img{width:100%;height:100%;object-fit:cover;display:block}
 #peek .tag{position:absolute;left:0;right:0;bottom:0;background:rgba(69,24,23,.9);color:var(--cream);font-size:.56rem;letter-spacing:.2em;text-transform:uppercase;padding:.5rem .6rem;text-align:center}
 @media (max-width:820px){#peek{display:none}.mrow h3{font-size:1.25rem}}
+
+
+/* ---- shared "one house, two doors" bar ---- */
+.house{background:var(--burg-deep);color:rgba(246,241,234,.7);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase}
+.house .wrap{display:flex;align-items:center;justify-content:center;gap:0;height:38px}
+.house span{margin-right:18px;color:rgba(246,241,234,.45)}
+.house a{text-decoration:none;color:rgba(246,241,234,.7);padding:0 16px;height:38px;display:inline-flex;align-items:center;gap:8px;border-left:1px solid rgba(246,241,234,.12)}
+.house a:last-child{border-right:1px solid rgba(246,241,234,.12)}
+.house a small{font-size:.56rem;letter-spacing:.12em;text-transform:none;color:rgba(246,241,234,.45)}
+.house a.on{background:var(--cream);color:var(--burg-deep)}
+.house a.on small{color:var(--mute)}
+.house a.momo.on{background:var(--burg);color:var(--cream)}
+.house a.momo.on small{color:var(--blue)}
+@media (max-width:640px){.house span{display:none}.house a small{display:none}.house .wrap{justify-content:stretch}.house a{flex:1;justify-content:center}}
+
+
 </style>
 </head>
 <body>
 
+<div class="house">
+  <div class="wrap">
+    <span>One clinic, two doors</span>
+    <a href="index.html">Browskii <small>brows, lashes, cosmetic tattoo</small></a>
+    <a class="momo on" href="momo.html">MOMO by Browskii <small>skin, cosmetic medicine</small></a>
+  </div>
+</div>
+
 <header>
   <div class="wrap nav">
-    <a class="brand" href="#top"><img src="assets/momo/logo.png" alt="MOMO"><span><b>MOMO</b><small>Skin &middot; Newstead</small></span></a>
-    <nav class="links"><a href="#how">How it works</a><a href="#concerns">Skin concerns</a><a href="gallery.html">Before and after &#128274;</a><a href="#ashleigh">Ashleigh</a></nav>
+    <a class="brand" href="#top"><img src="assets/momo/logo.png" alt="MOMO"><span><b>MOMO</b><small>by Browskii &middot; Newstead</small></span></a>
+    <nav class="links"><a href="index.html">Browskii</a><a href="#how">How it works</a><a href="#concerns">Skin concerns</a><a href="gallery.html">Before and after &#128274;</a><a href="#ashleigh">Ashleigh</a></nav>
     <a class="btn solid" href="assessment.html">Not sure where to start?</a>
   </div>
 </header>
@@ -190,7 +214,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <h1 style="margin-top:1rem">Tried everything and your skin is <em>still red?</em></h1>
       <p class="lead">The cream, the doctor, the prescription you did not want to stay on. MOMO is skin, led by a Registered Nurse who chose skin over injecting and has a special interest in rosacea. It starts with a consultation.</p>
       <div class="btns"><a class="btn blue" href="assessment.html">Start with the 60-second skin assessment</a></div>
-      <p class="alt">Been to Browskii before? <a href="https://www.browskii.com.au/bookings">Book your skin appointment</a></p>
+      <p class="alt">Been to Browskii before? <a href="https://www.browskii.com.au/bookings">Book your skin appointment</a> &middot; Here for brows? <a href="index.html">Go to Browskii</a></p>
       <div class="cap">A light-based skin treatment &middot; 27 Wyandra Street, Newstead</div>
     </div>
   </div>

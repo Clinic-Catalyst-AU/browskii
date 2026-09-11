@@ -219,6 +219,22 @@ body.locked{overflow:hidden}
 .vid .cap span{display:block;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);margin-top:.5rem}
 .closer{margin-top:2.4rem;padding-top:1.6rem;border-top:1px solid var(--line)}
 .relock{background:none;border:0;color:inherit;font:inherit;text-decoration:underline;cursor:pointer;opacity:.75}
+
+
+/* ---- shared "one house, two doors" bar ---- */
+.house{background:var(--burg-deep);color:rgba(246,241,234,.7);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase}
+.house .wrap{display:flex;align-items:center;justify-content:center;gap:0;height:38px}
+.house span{margin-right:18px;color:rgba(246,241,234,.45)}
+.house a{text-decoration:none;color:rgba(246,241,234,.7);padding:0 16px;height:38px;display:inline-flex;align-items:center;gap:8px;border-left:1px solid rgba(246,241,234,.12)}
+.house a:last-child{border-right:1px solid rgba(246,241,234,.12)}
+.house a small{font-size:.56rem;letter-spacing:.12em;text-transform:none;color:rgba(246,241,234,.45)}
+.house a.on{background:var(--cream);color:var(--burg-deep)}
+.house a.on small{color:var(--mute)}
+.house a.momo.on{background:var(--burg);color:var(--cream)}
+.house a.momo.on small{color:var(--blue)}
+@media (max-width:640px){.house span{display:none}.house a small{display:none}.house .wrap{justify-content:stretch}.house a{flex:1;justify-content:center}}
+
+
 </style>
 </head>
 <body class="locked">
@@ -237,10 +253,18 @@ body.locked{overflow:hidden}
   </div>
 </div>
 
+<div class="house">
+  <div class="wrap">
+    <span>One clinic, two doors</span>
+    <a href="index.html">Browskii <small>brows, lashes, cosmetic tattoo</small></a>
+    <a class="momo on" href="momo.html">MOMO by Browskii <small>skin, cosmetic medicine</small></a>
+  </div>
+</div>
+
 <header>
   <div class="wrap nav">
-    <a class="brand" href="momo.html"><img src="assets/momo/logo.png" alt=""><span><b>MOMO</b><small>Results gallery</small></span></a>
-    <nav class="links"><a href="momo.html">Home</a><a href="#skin">Skin</a><a href="#cosmetic-medicine">Cosmetic medicine</a><a href="momo.html#ashleigh">Ashleigh</a></nav>
+    <a class="brand" href="momo.html"><img src="assets/momo/logo.png" alt=""><span><b>MOMO</b><small>by Browskii &middot; Results gallery</small></span></a>
+    <nav class="links"><a href="index.html">Browskii</a><a href="momo.html">MOMO</a><a href="#skin">Skin</a><a href="#cosmetic-medicine">Cosmetic medicine</a><a href="momo.html#ashleigh">Ashleigh</a></nav>
     <a class="btn solid" href="assessment.html">Not sure where to start?</a>
   </div>
 </header>

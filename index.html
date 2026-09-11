@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Browskii | Cosmetic tattoo, brows and lashes | Newstead Brisbane</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --burg:#451817; --burg-deep:#2E0F10; --burg-soft:#5A2A28;
+  --blue:#CAD9FD; --blue-ink:#2E4A7A;
+  --cream:#f6f1ea; --paper:#fbf8f3; --blush:#efdcd6; --ink:#2a1a1b; --mute:#6f5a5b; --line:rgba(69,24,23,.14);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Jost',sans-serif;font-weight:300;color:var(--ink);background:var(--cream);line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:500;line-height:1.08;letter-spacing:-.01em}
+h1{font-size:clamp(2.3rem,6vw,4.4rem)}
+h2{font-size:clamp(1.9rem,4vw,3rem)}
+h3{font-size:1.35rem}
+p{max-width:62ch}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+.eyebrow{font-family:'Jost',sans-serif;font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;font-weight:500;color:var(--blue-ink)}
+.on-burg .eyebrow{color:var(--blue)}
+.btn{display:inline-block;padding:.95rem 1.7rem;font-family:'Jost',sans-serif;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;font-weight:500;text-decoration:none;border:1px solid var(--burg);color:var(--burg);background:transparent;transition:.2s}
+.btn.solid{background:var(--burg);color:var(--cream)}
+.btn.blue{background:var(--blue);border-color:var(--blue);color:var(--burg-deep)}
+.btn.ghost-light{border-color:rgba(246,241,234,.6);color:var(--cream)}
+.btn:hover{transform:translateY(-1px);background:var(--burg-soft);color:var(--cream);border-color:var(--burg-soft)}
+.btn.blue:hover{background:var(--blue-ink);border-color:var(--blue-ink);color:#fff}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:1.8rem}
+.alt{margin-top:.9rem;font-size:.86rem;color:rgba(246,241,234,.72)}
+.alt a{color:var(--blue);text-decoration:underline;text-underline-offset:3px}
+.alt.dark{color:var(--mute)}
+.alt.dark a{color:var(--burg)}
+
+header{position:sticky;top:0;z-index:9;background:rgba(246,241,234,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{width:44px;height:44px;border-radius:50%;object-fit:cover}
+.brand b{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;letter-spacing:.14em;color:var(--burg)}
+.brand small{display:block;font-family:'Jost',sans-serif;font-size:.58rem;letter-spacing:.24em;text-transform:uppercase;color:var(--mute);margin-top:-2px}
+.links{display:flex;gap:22px;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase}
+.links a{text-decoration:none;color:var(--burg)}
+@media (max-width:760px){.links{display:none}}
+.nav .btn{padding:.7rem 1.2rem;font-size:.64rem}
+@media (max-width:640px){.nav .btn{padding:.6rem .9rem;font-size:.58rem;letter-spacing:.12em}}
+
+.hero{background:var(--burg);color:var(--cream);position:relative;overflow:hidden;min-height:78vh;display:flex;align-items:center}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%}
+.hero .veil{position:absolute;inset:0;background:linear-gradient(90deg,rgba(69,24,23,.96) 0%,rgba(69,24,23,.86) 45%,rgba(69,24,23,.45) 100%)}
+.hero .wrap{position:relative;padding-top:88px;padding-bottom:88px}
+.hero .copy{max-width:640px}
+.hero h1 em{font-style:italic;color:var(--blue)}
+.hero .lead{margin-top:1.4rem;font-size:1.08rem;color:rgba(246,241,234,.86)}
+.hero .cap{font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(246,241,234,.5);margin-top:2.2rem}
+@media (max-width:820px){.hero{min-height:0}.hero .wrap{padding-top:60px;padding-bottom:60px}.hero .veil{background:rgba(69,24,23,.88)}}
+
+.how{background:var(--paper);border-bottom:1px solid var(--line)}
+.how .wrap{padding-top:64px;padding-bottom:64px}
+.how ol{list-style:none;display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:2rem;border:1px solid var(--line)}
+.how li{padding:22px 20px;border-right:1px solid var(--line);font-size:.92rem;color:var(--mute)}
+.how li:last-child{border-right:0}
+.how li b{display:block;font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:500;color:var(--burg);line-height:1.15;margin-bottom:.3rem}
+.how li i{display:block;font-style:normal;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--blue-ink);margin-bottom:.5rem}
+@media (max-width:900px){.how ol{grid-template-columns:1fr 1fr}.how li{border-bottom:1px solid var(--line)}.how li:nth-child(2n){border-right:0}}
+@media (max-width:520px){.how ol{grid-template-columns:1fr}.how li{border-right:0}}
+
+.strip{background:var(--blue);color:var(--burg-deep)}
+.strip .wrap{display:grid;grid-template-columns:repeat(5,1fr);gap:0;padding:0}
+.strip div{padding:26px 22px;border-right:1px solid rgba(69,24,23,.14);font-size:.9rem}
+.strip div:last-child{border-right:0}
+.strip b{display:block;font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:500;margin-bottom:.15rem}
+.strip .go{grid-column:1/-1;padding:18px 22px;border-top:1px solid rgba(69,24,23,.14);font-size:.8rem;display:flex;gap:16px;align-items:center;flex-wrap:wrap;border-right:0}
+.strip .go a{color:var(--burg-deep);font-weight:500;letter-spacing:.1em;text-transform:uppercase;font-size:.66rem;text-decoration:none;border-bottom:1px solid var(--burg-deep)}
+@media (max-width:900px){.strip .wrap{grid-template-columns:1fr 1fr}.strip div:nth-child(2n){border-right:0}.strip div{border-bottom:1px solid rgba(69,24,23,.14)}}
+@media (max-width:520px){.strip .wrap{grid-template-columns:1fr}.strip div{border-right:0}}
+
+section.block{padding:84px 0}
+@media (max-width:640px){section.block{padding:60px 0}}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+@media (max-width:820px){.two{grid-template-columns:1fr;gap:32px}}
+.two img{width:100%;object-fit:cover;aspect-ratio:4/5;border:1px solid var(--line)}
+.two .lead{margin-top:1.1rem;font-size:1.05rem;color:var(--mute)}
+
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:2.2rem}
+@media (max-width:820px){.steps{grid-template-columns:1fr}}
+.step{background:var(--paper);border:1px solid var(--line);padding:26px 24px}
+.step .n{font-family:'Cormorant Garamond',serif;font-size:2.2rem;color:var(--blue-ink);line-height:1}
+.step h3{margin:.5rem 0 .5rem}
+.step p{font-size:.95rem;color:var(--mute)}
+.phases{margin-top:2.6rem;display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line)}
+.phases div{padding:24px;border-right:1px solid var(--line)}
+.phases div:last-child{border-right:0}
+.phases b{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:500;display:block;color:var(--burg)}
+.phases p{font-size:.92rem;color:var(--mute);margin-top:.3rem}
+@media (max-width:640px){.phases{grid-template-columns:1fr}.phases div{border-right:0;border-bottom:1px solid var(--line)}.phases div:last-child{border-bottom:0}}
+
+.offer{background:var(--burg-deep);color:var(--cream)}
+.offer .card{background:var(--burg);border:1px solid rgba(202,217,253,.4);padding:44px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+@media (max-width:820px){.offer .card{grid-template-columns:1fr;padding:30px 24px}}
+.offer h2 em{font-style:italic;color:var(--blue)}
+.offer ul{list-style:none;margin-top:1.2rem}
+.offer li{padding:.5rem 0;border-top:1px solid rgba(246,241,234,.14);font-size:.95rem;display:flex;gap:.7rem}
+.offer li:first-child{border-top:0}
+.offer li i{font-style:normal;color:var(--blue)}
+.offer .side{border-left:1px solid rgba(246,241,234,.18);padding-left:36px}
+@media (max-width:820px){.offer .side{border-left:0;padding-left:0;border-top:1px solid rgba(246,241,234,.18);padding-top:24px}}
+.offer .side b{font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-weight:500;display:block}
+.offer .side p{font-size:.92rem;color:rgba(246,241,234,.75);margin-top:.4rem}
+.offer .fine{font-size:.74rem;color:rgba(246,241,234,.55);margin-top:1.4rem}
+
+.ash{background:var(--blush)}
+.ash .portrait{aspect-ratio:4/5;background:var(--burg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;color:var(--cream);border:1px solid var(--line)}
+.ash .portrait img{width:120px;height:120px;border-radius:50%;object-fit:cover}
+.ash .portrait span{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(246,241,234,.6)}
+.quote{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.45rem;color:var(--burg);margin:1.2rem 0;border-left:2px solid var(--blue-ink);padding-left:18px}
+
+.aglow .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+@media (max-width:820px){.aglow .wrap{grid-template-columns:1fr}}
+.aglow img{width:100%;aspect-ratio:3/2;object-fit:cover;border:1px solid var(--line)}
+
+.faq{background:var(--paper)}
+.faq .item{border-top:1px solid var(--line);padding:20px 0}
+.faq .item:last-child{border-bottom:1px solid var(--line)}
+.faq h3{font-size:1.25rem;cursor:pointer;display:flex;justify-content:space-between;gap:16px}
+.faq h3 span{color:var(--blue-ink);font-family:'Jost',sans-serif;font-weight:300}
+.faq p{margin-top:.6rem;color:var(--mute);font-size:.97rem;display:none}
+.faq .item.open p{display:block}
+
+.reviews{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--cream)}
+.reviews .wrap{padding-top:40px;padding-bottom:40px;display:flex;gap:24px;align-items:center;flex-wrap:wrap;justify-content:space-between}
+.reviews .ph{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mute);border:1px dashed var(--line);padding:14px 18px}
+
+.part{background:var(--burg);color:var(--cream)}
+.part .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center;padding-top:64px;padding-bottom:64px}
+@media (max-width:820px){.part .wrap{grid-template-columns:1fr}}
+.part img{width:100%;aspect-ratio:3/2;object-fit:cover;border:1px solid rgba(246,241,234,.18)}
+.part .lead{color:rgba(246,241,234,.8);margin-top:1rem}
+.part .addr{margin-top:1.4rem;font-size:.9rem;color:rgba(246,241,234,.75);line-height:1.9}
+.part .addr a{color:var(--blue);text-decoration:none}
+
+.close{background:var(--blue);color:var(--burg-deep);text-align:center}
+.close .wrap{padding-top:72px;padding-bottom:72px}
+.close p{margin:1rem auto 0}
+.close .btns{justify-content:center}
+
+footer{background:var(--burg-deep);color:rgba(246,241,234,.6);font-size:.74rem;padding:26px 0}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.cc{position:fixed;right:14px;bottom:14px;background:#0A2A28;color:#00D4BC;font-family:'Jost',sans-serif;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;padding:9px 12px;z-index:9;text-decoration:none}
+/* ---- concern list, hover preview (Dr Mandi pattern) ---- */
+.mirror{padding:64px 0 8px}
+.mlist{margin-top:2rem;border-top:1px solid var(--line)}
+.mrow{display:flex;align-items:center;gap:22px;padding:1.5rem 0;border-bottom:1px solid var(--line);text-decoration:none;color:inherit;position:relative;transition:.28s}
+.mrow:hover{padding-left:14px}
+.mrow .idx{font-family:'Jost',sans-serif;font-size:.62rem;letter-spacing:.22em;color:var(--mute);flex:0 0 54px}
+.mrow h3{font-size:1.55rem;color:var(--burg);transition:.28s}
+.mrow:hover h3{color:var(--blue-ink)}
+.mrow .desc{font-size:.88rem;color:var(--mute);margin-top:.25rem;max-width:56ch}
+.mrow .arrow{margin-left:auto;font-size:1.2rem;color:var(--blue-ink);opacity:0;transform:translateX(-8px);transition:.28s}
+.mrow:hover .arrow{opacity:1;transform:none}
+#peek{position:fixed;width:230px;aspect-ratio:4/5;pointer-events:none;z-index:40;opacity:0;transform:translate(-50%,-50%) scale(.94);transition:opacity .25s, transform .25s;box-shadow:0 24px 60px rgba(46,15,16,.4);overflow:hidden;border:1px solid rgba(202,217,253,.5)}
+#peek.on{opacity:1;transform:translate(-50%,-50%) scale(1)}
+#peek img{width:100%;height:100%;object-fit:cover;display:block}
+#peek .tag{position:absolute;left:0;right:0;bottom:0;background:rgba(69,24,23,.9);color:var(--cream);font-size:.56rem;letter-spacing:.2em;text-transform:uppercase;padding:.5rem .6rem;text-align:center}
+@media (max-width:820px){#peek{display:none}.mrow h3{font-size:1.25rem}}
+
+
+/* ---- shared "one house, two doors" bar ---- */
+.house{background:var(--burg-deep);color:rgba(246,241,234,.7);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase}
+.house .wrap{display:flex;align-items:center;justify-content:center;gap:0;height:38px}
+.house span{margin-right:18px;color:rgba(246,241,234,.45)}
+.house a{text-decoration:none;color:rgba(246,241,234,.7);padding:0 16px;height:38px;display:inline-flex;align-items:center;gap:8px;border-left:1px solid rgba(246,241,234,.12)}
+.house a:last-child{border-right:1px solid rgba(246,241,234,.12)}
+.house a small{font-size:.56rem;letter-spacing:.12em;text-transform:none;color:rgba(246,241,234,.45)}
+.house a.on{background:var(--cream);color:var(--burg-deep)}
+.house a.on small{color:var(--mute)}
+.house a.momo.on{background:var(--burg);color:var(--cream)}
+.house a.momo.on small{color:var(--blue)}
+@media (max-width:640px){.house span{display:none}.house a small{display:none}.house .wrap{justify-content:stretch}.house a{flex:1;justify-content:center}}
+
+/* ---- Browskii page palette: warm black on cream, MOMO burgundy kept for its own band ---- */
+.bk{--bink:#1f1a17;--sand:#d9c6b0;--sand-deep:#b89a7a}
+.bk .brand b{color:var(--bink);letter-spacing:.26em;font-family:'Jost',sans-serif;font-weight:500;font-size:1.05rem}
+.bk .links a{color:var(--bink)}
+.bk .btn{border-color:var(--bink);color:var(--bink)}
+.bk .btn.solid{background:var(--bink);color:var(--cream)}
+.bk .btn:hover{background:#3a312c;border-color:#3a312c;color:var(--cream)}
+.bk .eyebrow{color:var(--sand-deep)}
+.bk h1,.bk h2,.bk h3{color:var(--bink)}
+.bk .alt.dark a{color:var(--bink)}
+
+.bhero{background:var(--cream);overflow:hidden}
+.bhero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding-top:72px;padding-bottom:72px}
+.bhero .lead{margin-top:1.4rem;font-size:1.08rem;color:var(--mute)}
+.bhero .pic{position:relative}
+.bhero .pic img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 30%;border:1px solid var(--line)}
+.bhero .pic .stamp{position:absolute;left:-14px;bottom:26px;background:var(--burg);color:var(--cream);padding:14px 18px;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;display:flex;align-items:center;gap:12px;text-decoration:none}
+.bhero .pic .stamp img{width:34px;height:34px;border-radius:50%;aspect-ratio:1;border:0}
+.bhero .pic .stamp b{display:block;font-family:'Cormorant Garamond',serif;font-size:1.1rem;letter-spacing:.06em;text-transform:none;font-weight:500}
+@media (max-width:820px){.bhero .wrap{grid-template-columns:1fr;gap:32px;padding-top:48px;padding-bottom:48px}.bhero .pic .stamp{left:0}}
+
+.doors{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.doors .wrap{padding-top:72px;padding-bottom:72px}
+.doors .grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:2.2rem}
+@media (max-width:820px){.doors .grid{grid-template-columns:1fr}}
+.door{padding:40px 36px;border:1px solid var(--line);display:flex;flex-direction:column;gap:14px;text-decoration:none;color:inherit;transition:.25s;position:relative}
+.door:hover{transform:translateY(-3px)}
+.door .mark{display:flex;align-items:center;gap:12px;font-size:.62rem;letter-spacing:.24em;text-transform:uppercase}
+.door .mark img{width:38px;height:38px;border-radius:50%}
+.door h3{font-size:2rem;line-height:1.05}
+.door ul{list-style:none;font-size:.92rem;line-height:1.9}
+.door .go{margin-top:auto;font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;font-weight:500;padding-top:14px}
+.door.b{background:var(--cream);color:var(--bink)}
+.door.b .mark{color:var(--sand-deep)}
+.door.b ul{color:var(--mute)}
+.door.b .go{border-top:1px solid var(--line)}
+.door.m{background:var(--burg);color:var(--cream)}
+.door.m .mark{color:var(--blue)}
+.door.m h3{color:var(--cream)}
+.door.m h3 em{font-style:italic;color:var(--blue)}
+.door.m ul{color:rgba(246,241,234,.8)}
+.door.m .go{border-top:1px solid rgba(246,241,234,.18);color:var(--blue)}
+.doors .rule{margin-top:1.6rem;font-size:.95rem;color:var(--mute);max-width:70ch}
+
+.menu .wrap{padding-top:88px;padding-bottom:88px;display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:start}
+@media (max-width:820px){.menu .wrap{grid-template-columns:1fr;gap:32px;padding-top:60px;padding-bottom:60px}}
+.menu .pic img{width:100%;aspect-ratio:4/5;object-fit:cover;border:1px solid var(--line);position:sticky;top:120px}
+.menu .lead{margin-top:1rem;color:var(--mute);font-size:1.02rem}
+.plist{list-style:none;margin-top:1.8rem;border-top:1px solid var(--line)}
+.plist li{display:grid;grid-template-columns:1fr auto;gap:18px;padding:16px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.plist li b{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:500;display:block;color:var(--bink)}
+.plist li span{font-size:.86rem;color:var(--mute);display:block;margin-top:.15rem;max-width:52ch}
+.plist li i{font-style:normal;font-family:'Jost',sans-serif;font-size:.9rem;letter-spacing:.06em;color:var(--bink);white-space:nowrap}
+.menu .fine{font-size:.78rem;color:var(--mute);margin-top:1.2rem}
+.menu.alt-bg{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+
+.work .wrap{padding-top:72px;padding-bottom:72px}
+.work .grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:2rem}
+@media (max-width:900px){.work .grid{grid-template-columns:repeat(3,1fr)}}
+.work .grid a{display:block;position:relative;aspect-ratio:4/5;overflow:hidden;border:1px solid var(--line)}
+.work .grid a img{width:100%;height:100%;object-fit:cover;transition:.4s}
+.work .grid a:hover img{transform:scale(1.04)}
+.work .grid a span{position:absolute;left:0;right:0;bottom:0;background:rgba(31,26,23,.72);color:var(--cream);font-size:.56rem;letter-spacing:.18em;text-transform:uppercase;padding:.5rem .6rem}
+
+.mband{background:var(--burg);color:var(--cream);position:relative;overflow:hidden}
+.mband .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;padding-top:88px;padding-bottom:88px}
+@media (max-width:820px){.mband .wrap{grid-template-columns:1fr;gap:32px;padding-top:60px;padding-bottom:60px}}
+.mband h2{color:var(--cream)}
+.mband h2 em{font-style:italic;color:var(--blue)}
+.mband .lead{margin-top:1.2rem;color:rgba(246,241,234,.84);font-size:1.05rem}
+.mband .quote{color:var(--blue);border-left-color:var(--blue)}
+.mband img{width:100%;aspect-ratio:4/5;object-fit:cover;border:1px solid rgba(246,241,234,.2)}
+.mband .mark{display:flex;align-items:center;gap:12px;color:var(--blue);font-size:.62rem;letter-spacing:.24em;text-transform:uppercase}
+.mband .mark img{width:44px;height:44px;border-radius:50%;aspect-ratio:1;border:0}
+.mband .btn.blue{background:var(--blue);border-color:var(--blue);color:var(--burg-deep)}
+.mband .btn.ghost-light{border-color:rgba(246,241,234,.6);color:var(--cream)}
+.mband .btn.ghost-light:hover{background:rgba(246,241,234,.12)}
+.mband .alt a{color:var(--blue)}
+
+.rev{background:var(--cream);border-top:1px solid var(--line)}
+.rev .wrap{padding-top:72px;padding-bottom:72px}
+.rev .score{display:flex;align-items:baseline;gap:16px}
+.rev .score b{font-family:'Cormorant Garamond',serif;font-size:4rem;font-weight:500;line-height:1;color:var(--bink)}
+.rev .score span{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mute)}
+.rev .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:2rem}
+@media (max-width:820px){.rev .grid{grid-template-columns:1fr}}
+.rev blockquote{background:var(--paper);border:1px solid var(--line);padding:26px 24px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.25rem;color:var(--bink);line-height:1.4}
+.rev blockquote cite{display:block;font-family:'Jost',sans-serif;font-style:normal;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mute);margin-top:1rem}
+
+.visit{background:var(--paper);border-top:1px solid var(--line)}
+.visit .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;padding-top:80px;padding-bottom:80px}
+@media (max-width:820px){.visit .wrap{grid-template-columns:1fr;gap:32px;padding-top:56px;padding-bottom:56px}}
+.visit img{width:100%;aspect-ratio:4/5;object-fit:cover;border:1px solid var(--line)}
+.visit .addr{margin-top:1.4rem;font-size:.95rem;color:var(--mute);line-height:2}
+.visit .addr a{color:var(--bink);text-decoration:none;border-bottom:1px solid var(--line)}
+.visit .fine{font-size:.8rem;color:var(--mute);margin-top:1.4rem;max-width:56ch}
+
+.bk footer{background:var(--bink)}
+
+</style>
+
+</head>
+<body class="bk">
+
+<div class="house">
+  <div class="wrap">
+    <span>One clinic, two doors</span>
+    <a class="on" href="index.html">Browskii <small>brows, lashes, cosmetic tattoo</small></a>
+    <a class="momo" href="momo.html">MOMO by Browskii <small>skin, cosmetic medicine</small></a>
+  </div>
+</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html"><span><b>BROWSKII</b><small>Newstead &middot; Brisbane</small></span></a>
+    <nav class="links"><a href="#tattoo">Cosmetic tattoo</a><a href="#brows">Brows and lashes</a><a href="momo.html">Skin at MOMO</a><a href="gallery.html">Gallery &#128274;</a><a href="#visit">Visit</a></nav>
+    <a class="btn solid" href="https://www.browskii.com.au/bookings">Book</a>
+  </div>
+</header>
+
+<section class="bhero" id="top">
+  <div class="wrap">
+    <div class="copy">
+      <div class="eyebrow">Cosmetic tattoo &middot; brows &middot; lashes &middot; Newstead</div>
+      <h1 style="margin-top:1rem">Brisbane's original cosmetic tattoo clinic.</h1>
+      <p class="lead">Feather touch, ombre, nano brows, eyeliner and lip blush by artists who do this all day, every day. Brows and lashes too. And when it is your skin you want looked at, MOMO is through the same door, with a nurse whose whole job is skin.</p>
+      <div class="btns"><a class="btn solid" href="https://www.browskii.com.au/bookings">Book at Browskii</a><a class="btn" href="#tattoo">See the cosmetic tattoo menu</a></div>
+      <p class="alt dark">Here for redness, rosacea or your skin? <a href="momo.html">Go to MOMO</a></p>
+    </div>
+    <div class="pic">
+      <img src="assets/browskii/brow-eye.jpg" alt="A close-up of a client's finished brow and lashes at Browskii">
+      <a class="stamp" href="momo.html"><img src="assets/momo/logo.png" alt=""><span><b>MOMO by Browskii</b>Skin, same door</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="doors" id="doors">
+  <div class="wrap">
+    <div class="eyebrow">One clinic, two doors</div>
+    <h2 style="margin-top:.8rem">Same address. Same standards. Never the same person doing both.</h2>
+    <div class="grid">
+      <a class="door b" href="#tattoo">
+        <div class="mark">Browskii</div>
+        <h3>Brows, lashes and cosmetic tattoo.</h3>
+        <ul>
+          <li>Feather touch, ombre, combination and nano brows</li>
+          <li>Lash enhancement and baby wing eyeliner</li>
+          <li>Lip blush</li>
+          <li>Brow wax, tint, henna, hybrid and lamination</li>
+          <li>Lash lift and tint</li>
+        </ul>
+        <div class="go">See the menus &rarr;</div>
+      </a>
+      <a class="door m" href="momo.html">
+        <div class="mark"><img src="assets/momo/logo.png" alt="">MOMO by Browskii</div>
+        <h3>Skin and cosmetic medicine, <em>led by a nurse.</em></h3>
+        <ul>
+          <li>Redness and rosacea</li>
+          <li>Pigmentation and sun damage</li>
+          <li>Acne, texture and scarring</li>
+          <li>Skin needling, light-based treatments, skin boosters</li>
+          <li>Cosmetic medicine, by consultation</li>
+        </ul>
+        <div class="go">Go to MOMO &rarr;</div>
+      </a>
+    </div>
+    <p class="rule">The artist who does your brows is not the person who treats your skin. Each side of the clinic has people who do one craft, all day. If you already come for brows and want your skin looked at, ask your artist and they will walk you across.</p>
+  </div>
+</section>
+
+<section class="menu" id="tattoo">
+  <div class="wrap">
+    <div class="pic"><img src="assets/browskii/smile.jpg" alt="A Browskii client with finished cosmetic tattoo brows"></div>
+    <div>
+      <div class="eyebrow">Cosmetic tattoo</div>
+      <h2 style="margin-top:.8rem">The craft that built the name.</h2>
+      <p class="lead">Every cosmetic tattoo appointment except eyeliner includes a complimentary follow-up within 6 to 10 weeks. Not sure which brow to book? Book the ombre appointment. It has the longer time slot, so there is room to decide on the day.</p>
+      <ul class="plist">
+        <li><div><b>Consultation</b><span>A full skin and brow assessment with a recommendation for you. Redeemable against a same-day booking if there is space.</span></div><i>$50</i></li>
+        <li><div><b>Feather touch brows</b><span>Fine strokes that mimic brow hairs. Normal to dry skin with a moderate amount of brow hair. Follow-up included.</span></div><i>$995</i></li>
+        <li><div><b>Ombre brows</b><span>A soft mist of colour, light and dusty or defined and bold. Suits all skin and hair types.</span></div><i>$995</i></li>
+        <li><div><b>Combination brows</b><span>Hair strokes with a fine mist of colour through them. Suits most skin types.</span></div><i>$995</i></li>
+        <li><div><b>Nano brows</b><span>Machine hair strokes, ultra gentle, for skin that could not hold bladed strokes before. Touch-up if needed, $250 within 10 weeks.</span></div><i>$850</i></li>
+        <li><div><b>Lash enhancement liner</b><span>The look of a tight-lined lash line, fuller and subtly defined. Touch-up $150.</span></div><i>$550</i></li>
+        <li><div><b>Baby wing liner</b><span>The tight liner with a small flick at the end. Touch-up $150.</span></div><i>$650</i></li>
+        <li><div><b>Lip blush</b><span>A fine mist of pigment to bring back colour, shape and fullness. A natural finish with a hint of colour.</span></div><i>$950</i></li>
+        <li><div><b>Brow refresh</b><span>For returning Browskii cosmetic tattoo clients. 6 to 12 months $350, 13 to 18 months $450, after 18 months a full appointment.</span></div><i>from $350</i></li>
+      </ul>
+      <div class="btns"><a class="btn solid" href="https://www.browskii.com.au/bookings">Book cosmetic tattoo</a><a class="btn" href="gallery.html">See the work &#128274;</a></div>
+      <p class="fine">Booking fees are explained before you confirm and are non-refundable. Late arrivals cannot be accommodated, so please allow time for traffic and parking. Cosmetic tattoo is performed in a private room.</p>
+    </div>
+  </div>
+</section>
+
+<section class="menu alt-bg" id="brows">
+  <div class="wrap">
+    <div class="pic"><img src="assets/browskii/lashes.jpg" alt="A lash lift and tint at Browskii"></div>
+    <div>
+      <div class="eyebrow">Brows and lashes</div>
+      <h2 style="margin-top:.8rem">The appointment you keep every five weeks.</h2>
+      <p class="lead">Return within five weeks and the lower price applies. A precision tweezing option is available if wax does not agree with your skin, just tell your artist.</p>
+      <ul class="plist">
+        <li><div><b>Brow wax and tint</b><span>A tint blended for you, shaped to your face.</span></div><i>$75 / $60</i></li>
+        <li><div><b>Brow wax and henna tint</b><span>Stains the skin for up to two weeks and the hair for five. Definition where the hair is sparse.</span></div><i>$80 / $70</i></li>
+        <li><div><b>Hybrid brows</b><span>The client favourite. Tint and henna together, defined or soft.</span></div><i>$95 / $80</i></li>
+        <li><div><b>Brow lamination</b><span>Unruly brows set smooth and brushed up. Includes wax and tint.</span></div><i>$140</i></li>
+        <li><div><b>Lash lift and tint</b><span>Length, thickness and lift on your own lashes. Pregnancy-safe and sensitive formula $155. Korean lash lift $155.</span></div><i>$140</i></li>
+        <li><div><b>Express and extras</b><span>Brow tint express $35, tint with stain $55, sculpt only $60, brow lightening $75, men's brow tidy $40 to $50, lash tint $35.</span></div><i>from $35</i></li>
+      </ul>
+      <div class="btns"><a class="btn solid" href="https://www.browskii.com.au/bookings">Book brows or lashes</a></div>
+      <p class="fine">Please stop any prescription skincare, steroid or vitamin A products at least one week before a brow or lash appointment.</p>
+    </div>
+  </div>
+</section>
+
+<section class="work" id="work">
+  <div class="wrap">
+    <div class="eyebrow">Recent work</div>
+    <h2 style="margin-top:.8rem">Straight from the clinic Instagram.</h2>
+    <div class="grid">
+      <a href="https://www.instagram.com/browskii.au/" target="_blank" rel="noopener"><img src="assets/momo/social/brow-ba.jpg" alt="Brows before and after at Browskii"><span>Brows</span></a>
+      <a href="https://www.instagram.com/reel/Dbm3pNgB259/" target="_blank" rel="noopener"><img src="assets/momo/social/brow-reveal-reel.jpg" alt="A brow reveal reel from Browskii"><span>Reveal</span></a>
+      <a href="https://www.instagram.com/browskii.au/" target="_blank" rel="noopener"><img src="assets/momo/social/lipblush-ba.jpg" alt="Lip blush at Browskii"><span>Lip blush</span></a>
+      <a href="https://www.instagram.com/browskii.au/" target="_blank" rel="noopener"><img src="assets/browskii/lashes.jpg" alt="Lash lift and tint at Browskii"><span>Lashes</span></a>
+      <a href="https://www.instagram.com/browskii.au/" target="_blank" rel="noopener"><img src="assets/browskii/brow-sculpt.jpg" alt="Brow sculpt and lash lift at Browskii"><span>Sculpt and lift</span></a>
+      <a href="https://www.instagram.com/browskii.au/" target="_blank" rel="noopener"><img src="assets/browskii/brows-filled.jpg" alt="Filled-in brows without makeup at Browskii"><span>Nano brows</span></a>
+    </div>
+    <p class="alt dark" style="margin-top:1.2rem">Thirteen thousand people follow along at <a href="https://www.instagram.com/browskii.au/" target="_blank" rel="noopener">@browskii.au</a>. The skin side lives at <a href="https://www.instagram.com/momo_by_browskii.au/" target="_blank" rel="noopener">@momo_by_browskii.au</a>.</p>
+  </div>
+</section>
+
+<section class="mband" id="momo">
+  <div class="wrap">
+    <div>
+      <div class="mark"><img src="assets/momo/logo.png" alt="">MOMO by Browskii</div>
+      <h2 style="margin-top:1rem">Your skin has <em>its own door.</em></h2>
+      <p class="lead">Tried everything and your skin is still red? MOMO is the skin clinic Browskii grew, with its own name, its own room and a Registered Nurse who chose skin over injecting and has a special interest in rosacea. Redness, pigmentation, texture and acne, and cosmetic medicine by consultation. It starts with a look at your skin, not a treatment.</p>
+      <p class="quote">"I love rosacea. It's always just been such a big reward."</p>
+      <div class="btns"><a class="btn blue" href="assessment.html">Start with the 60-second skin assessment</a><a class="btn ghost-light" href="momo.html">Go to MOMO</a></div>
+      <p class="alt">Already a Browskii client? <a href="https://www.browskii.com.au/bookings">Book your skin appointment</a></p>
+    </div>
+    <img src="assets/momo/hero-poster.jpg" alt="A light-based skin treatment at MOMO">
+  </div>
+</section>
+
+<section class="rev" id="reviews">
+  <div class="wrap">
+    <div class="score"><b>4.9</b><span>Google rating across 168 reviews</span></div>
+    <div class="grid">
+      <blockquote>"I won't go anywhere else for my botox and brows. The girls are all so professional and lovely."<cite>Google review</cite></blockquote>
+      <blockquote>"Teddy always looks after me and her brows are absolutely amazing."<cite>Google review</cite></blockquote>
+      <blockquote>"Thank you Teddy for always making my brows and lashes look AMAZING. I always get compliments."<cite>Google review</cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap">
+    <img src="assets/browskii/clinic.jpg" alt="Inside the Browskii clinic in Newstead">
+    <div>
+      <div class="eyebrow">Visit</div>
+      <h2 style="margin-top:.8rem">27 Wyandra Street, Newstead.</h2>
+      <p class="lead" style="margin-top:1rem;color:var(--mute)">Browskii and MOMO share the building. Book either side online, or call and the team will point you to the right room.</p>
+      <div class="addr">
+        <a href="https://www.browskii.com.au/bookings">Book online</a><br>
+        <a href="tel:+61417322366">0417 322 366</a><br>
+        <a href="mailto:hello@browskii.com.au">hello@browskii.com.au</a><br>
+        <a href="https://www.instagram.com/browskii.au/" target="_blank" rel="noopener">@browskii.au</a> &middot; <a href="https://www.instagram.com/momo_by_browskii.au/" target="_blank" rel="noopener">@momo_by_browskii.au</a>
+      </div>
+      <p class="fine">Cancellations need to be phoned through, not texted or messaged. Booking fees are non-refundable. For everyone's comfort, children cannot come into the clinic.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 Browskii &middot; MOMO by Browskii &middot; 27 Wyandra Street, Newstead &middot; 0417 322 366</span>
+    <span>Concept by Clinic Catalyst &middot; photos from browskii.com.au and the clinic Instagram &middot; prices as published on browskii.com.au</span>
+  </div>
+</footer>
+<a class="cc" href="structure.html">How the two doors fit online &rarr;</a>
+
+</body>
+</html>
